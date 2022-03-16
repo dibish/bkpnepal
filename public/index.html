@@ -3,31 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-black-50 antialiased">
+<body class="bg-[#f2f2f2] font-worksans antialiased">
   <div class="bg-white px-6">
-    <header class="container mx-auto h-[60px] flex items-center justify-between">
+    <header class="md:container mx-auto h-[60px] flex items-center justify-between">
       <a href="/">
-        <svg class="w-[120px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 39.6">
+        <svg class="w-[140px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 39.6">
           <defs><style>.cls-1{fill:#171717;}.cls-2{fill:#ed1c24;}</style></defs>
           <path class="cls-1" d="M107.68,5.57A1.47,1.47,0,0,1,108.8,6a1.52,1.52,0,0,1,.42,1.1V32.84a1.66,1.66,0,0,1-1.7,1.74,2,2,0,0,1-.75-.14,1.4,1.4,0,0,1-.58-.4L88.45,10.59l.83-.5v23a1.49,1.49,0,0,1-.43,1.1,1.54,1.54,0,0,1-1.14.43,1.43,1.43,0,0,1-1.08-.43,1.52,1.52,0,0,1-.41-1.1V7.23A1.56,1.56,0,0,1,86.69,6a1.62,1.62,0,0,1,1.14-.46,2.15,2.15,0,0,1,.77.15,1.29,1.29,0,0,1,.6.43l17.49,23.13-.54.66V7.11a1.49,1.49,0,0,1,.43-1.1A1.52,1.52,0,0,1,107.68,5.57Z"/><path class="cls-1" d="M115.52,5.57h14.75a1.73,1.73,0,0,1,1.2.46,1.51,1.51,0,0,1,.5,1.16,1.45,1.45,0,0,1-.5,1.14,1.75,1.75,0,0,1-1.2.43H116.92l.38-.7V18.54l-.42-.45H128.4a1.76,1.76,0,0,1,1.21.45,1.53,1.53,0,0,1,.49,1.17,1.44,1.44,0,0,1-.49,1.14,1.79,1.79,0,0,1-1.21.43H117l.29-.37V31.64l-.25-.29h13.22a1.64,1.64,0,0,1,1.2.5A1.55,1.55,0,0,1,132,33a1.52,1.52,0,0,1-.5,1.16,1.72,1.72,0,0,1-1.2.45H115.52a1.59,1.59,0,0,1-1.19-.49,1.73,1.73,0,0,1-.47-1.21V7.23a1.62,1.62,0,0,1,1.66-1.66Z"/><path class="cls-1" d="M147.07,5.57a7.72,7.72,0,0,1,4.1,1.12,8,8,0,0,1,2.88,3.07,9.1,9.1,0,0,1,1.06,4.43,9.27,9.27,0,0,1-1.06,4.44,8.26,8.26,0,0,1-2.88,3.15,7.49,7.49,0,0,1-4.1,1.16h-8.41l.29-.5V32.88a1.77,1.77,0,0,1-.46,1.21,1.64,1.64,0,0,1-2.34,0,1.8,1.8,0,0,1-.44-1.21V7.23a1.64,1.64,0,0,1,1.66-1.66Zm0,14.18a4,4,0,0,0,2.4-.75,5.23,5.23,0,0,0,1.66-2,6.22,6.22,0,0,0,.62-2.78,5.86,5.86,0,0,0-.62-2.77,5.21,5.21,0,0,0-1.66-1.93,4.11,4.11,0,0,0-2.4-.73h-8.41l.29-.45V20.16l-.29-.41Z"/><path class="cls-1" d="M166.88,9.88l-9.74,23.71a1.54,1.54,0,0,1-.58.79,1.64,1.64,0,0,1-2-.13,1.42,1.42,0,0,1-.37-1,1.24,1.24,0,0,1,.08-.62L165,6.53a1.52,1.52,0,0,1,1.61-1.08,1.76,1.76,0,0,1,1,.29,1.48,1.48,0,0,1,.6.79l10.69,25.86a1.92,1.92,0,0,1,.12.66,1.48,1.48,0,0,1-.49,1.18,1.67,1.67,0,0,1-1.12.44,1.56,1.56,0,0,1-.91-.29,1.7,1.7,0,0,1-.62-.83L166,9.84Zm-7.66,16.95,1.41-3.23h12.3l.63,3.23Z"/><path class="cls-1" d="M198.3,31.31a1.66,1.66,0,0,1,1.2.48A1.56,1.56,0,0,1,200,33a1.52,1.52,0,0,1-.5,1.16,1.72,1.72,0,0,1-1.2.45H184a1.57,1.57,0,0,1-1.18-.49,1.7,1.7,0,0,1-.48-1.21V7.23a1.58,1.58,0,0,1,.5-1.18A1.72,1.72,0,0,1,184,5.57a1.68,1.68,0,0,1,1.21.48,1.57,1.57,0,0,1,.49,1.18V32.06l-.82-.75Z"/><path class="cls-2" d="M72.27,4.76H61.55v14H61c-3.21,0-5.81,3.05-5.81,6.8h6.37l0,9.29h6l0-9.48h5.54s8.32-1,8.32-9.84c0-10.63-9.12-10.8-9.12-10.8m-.87,14H67.53V12h4s2.73-.11,2.9,3.28a3.08,3.08,0,0,1-3,3.47"/><path class="cls-2" d="M46,20.91,59.63,4.72H51.17l-9.79,11.2V4.72H35.1c-3.21,0-5.81,3-5.81,6.8h6.12V34.88h6v-9l9.46,9H60Z"/><path class="cls-2" d="M3.39,19.11c.12-1.95,1.64-5.38,5-5.38H8.6l0-.23L8.58,4.74H20.32a7.39,7.39,0,0,1,7.14,6.45A7.59,7.59,0,0,1,25.81,17a6.85,6.85,0,0,1-5,2ZM14.11,13.7H19a2.14,2.14,0,0,0,2.14-2.13h0A2.14,2.14,0,0,0,19,9.43H14.09Z"/><path class="cls-2" d="M8.58,34.86l.07-9H0a5.38,5.38,0,0,1,5.09-5.43H8.37l13.59,0c3.54,0,5.37,1.27,6.58,2.71A7.33,7.33,0,0,1,30,28.66a6.65,6.65,0,0,1-6.6,6.2Zm5.51-4.57,8-.06a2.17,2.17,0,0,0,2.16-2.17h0a2.17,2.17,0,0,0-2.17-2.16h-8Z"/>
         </svg> 
       </a>
-      <button >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-        </svg>
+      <nav class="hidden xl:block">
+        <ul class="flex uppercase text-sm font-semibold space-x-4">
+          <li><a class="transition duration-100 ease-in hover:bg-black-800 text-black-600 hover:text-white py-2 px-3 rounded-full" href="#">Home</a></li>
+          <li><a class="transition duration-100 ease-in hover:bg-black-800 text-black-600 hover:text-white py-2 px-3 rounded-full" href="#">Action Plan</a></li>
+          <li><a class="transition duration-100 ease-in hover:bg-black-800 text-black-600 hover:text-white py-2 px-3 rounded-full" href="#">Membership Type</a></li>
+          <li><a class="transition duration-100 ease-in hover:bg-black-800 text-black-600 hover:text-white py-2 px-3 rounded-full" href="#">Upcoming Projects</a></li>
+          <li><a class="transition duration-100 ease-in hover:bg-black-800 text-black-600 hover:text-white py-2 px-3 rounded-full" href="#">About us</a></li>
+          <li><a class="transition duration-100 ease-in bg-primary-800 hover:bg-black-800 text-white py-2 px-3 rounded-full" href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <button class="menu lg:hidden">
+        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 2H22M2 9.84993H22M2 18H16" stroke="#171717" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
       </button>
     </header>
   </div>
-  <section class="h-[400px] sm:h-[500px] w-full bg-[url('../images/hero.jpg')] bg-no-repeat bg-cover bg-bottom md:bg-center">
-   <div class="px-6 h-full w-full bg-black-900 bg-opacity-70 flex gap-8 justify-center items-start md:items-center  flex-col">
-     <h1 class="text-black-50 text-6xl font-semibold md:font-extrabold leading-[1]">Life Changing Plalform</h1>
-     <button class="bg-primary-900 text-lg uppercase text-white font-semibold px-8 py-2 rounded hover:bg-black-800">
-      <a href="#">Join Us</a>
-    </button>
+  <section class="bg-[#f2f2f2] max-w-5xl mx-auto flex flex-col sm:flex-row py-16 px-6 items-center gap-12">
+    
+    <div class="flex-1 space-y-8  text-center">
+      <h1 class="break-words leading-[4] text-black-800 text-3xl sm:text-5xl uppercase font-worksans font-extrabold md:font-extrabold" style="line-height: 1.3;">जीवन बदल्ने साझा मंचमा हजुरलाई स्वागत छ।</h1>
+      <p class="text-sm">जीवन समृद्ध बनाउने समृद्धिको अभियानमा रास्ट्रलाई समेत सघाउने, इच्छा आकांक्षा राख्ने रचनात्मक सपना  देख्ने  जो कोहि हामी संग जोडिन सक्नु हुनेछ।
+      </p>
+      <button class="inline-block bg-black-900 text-lg uppercase text-white font-bold px-8 py-2 rounded transition duration-100 ease-out hover:bg-primary-900 hover:ease-in">
+        <a href="#">Join Us</a>
+       </button>
+    </div>
+    <div class="hidden md:block md:w-96">
+      <img class="w-full" src="images/hero3.png" alt="">
    </div>
   </section>
+  <main class="bg-white grid grid-cols-1 px-6 py-12">
+    <section >
+      <h2 class="font-semibold text-lg">Mission</h2>
+      <p>
+        राष्ट्रिय तथा अन्तर्राष्ट्रिय जगतमा एक प्रतिष्ठित कम्पनी भइ कारोबार गर्ने ।
+      </p>
+    </section>
+    <section>
+      <h2 class="font-semibold text-lg">Vision</h2>
+      <p>
+        सानो सानो पुंजीलाई एकीकृत गरि बृहत राष्ट्रिय पुंजिमा रुपान्तरण गरि उत्पादन ब्यापार प्रबर्द्धन देशलाई आर्थिक समृद्धि मा लैजाने ।
+      </p>
+    </section>
+    <section>
+      <h2 class="font-semibold text-lg">Target</h2>
+      <p>
+        सम्पुर्ण नेपाली जन हरु को साझा कम्पनी बनाई राष्ट्रिय तथा अन्तर्राष्ट्रिय जगत मा ब्यापार ब्यवसाय गर्ने
+      </p>
+    </section>
+    
+  </main>
+  <footer class="h-96 w-full bg-black-800">
+
+  </footer>
 </body>
 </html>
