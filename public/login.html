@@ -215,60 +215,35 @@
     <!-- end mobile off canvas side nav -->
   </div>
 
-  <!-- hero section -->
-  <section
-    class="bg-primary-50 w-full min-h-[calc(100vh_-_80px)] bg-fixed bg-no-repeat bg-cover bg-right-bottom md:bg-center bg-[url('https://img.freepik.com/free-photo/bank-with-coins-green-sprout_169016-3685.jpg?t=st=1647629458~exp=1647630058~hmac=28fd22e915d65538d5ea5996c4319c4213ebcb82575f561789b563a1528ad6e2&w=826')]">
-    <div
-      class="w-full min-h-[calc(100vh_-_80px)] bg-black-900 bg-opacity-75 flex flex-col justify-center items-center px-8 ">
-      <h1 class="text-white text-center text-4xl md:text-6xl font-mukta font-extrabold md:max-w-lg">जीवन बदल्ने साझा
-        मंचमा हजुरलाई स्वागत छ।</h1>
-      <div>
-        <button
-          class="text-white text-lg bg-primary-900 hover:bg-opacity-90 mt-4 md:mt-8 px-5 py-3 rounded-md shadow">Become
-          a member</button>
-      </div>
-    </div>
-  </section>
-  <!-- end of hero section -->
 
-  <!-- main section -->
-  <div class="bg-black-50">
-    <main
-      class="max-w-5xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-8 py-16 md:py-24  bg-black-50">
-      <div class="card bg-white rounded-xl hover:shadow-lg">
-        <div class="flex items-center justify-center">
-          <img class="w-7/12 pt-3" src="https://cdn-icons-png.flaticon.com/512/3891/3891710.png" alt="" />
+  <section class="py-16  bg-black-50">
+      <main class="max-w-5xl px-6 mx-auto grid place-content-center">
+        <div class="bg-white p-6 shadow rounded-md">
+            <h3 class="font-semibold text-black-700 text-lg mb-4 flex items-center gap-2">
+                <svg class="w-6 h-6 stroke-black-700" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
+               <span>Login</span> 
+            </h3>
+            <form class="space-y-2 flex flex-col">
+                <label class="mb-2 block" for="name">
+                    <span>Username</span>
+                    <input class="input" type="text" name="name" id="name">
+                </label>
+                <label for="password">
+                    <span>Password</span>
+                    <input class="input" type="password" name="password" id="password">
+                </label>
+                <label for="remember">
+                    <input class="accent-black-900 mt-2" type="checkbox" name="remember" id="remember">
+                    <span>Remember me</span>
+                </label>
+                
+                <button class="btn" type="submit">Login</button>
+                <a class="underline mt-4" href="#forgot">Forgot Password ?</a>
+            </form>
         </div>
-        <div class="px-4 py-4 space-y-2">
-          <h3 class="underline decoration-primary-900 decoration-4 text-black-900 text-2xl font-bold">Mission</h3>
-          <p class="font-mukta text-black-800 text-lg font-semibold">राष्ट्रिय तथा अन्तर्राष्ट्रिय जगतमा एक प्रतिष्ठित
-            कम्पनी भइ कारोबार गर्ने।</p>
-        </div>
-      </div>
-      <div class="card bg-white rounded-xl hover:shadow-lg">
-        <div class="flex items-center justify-center">
-          <img class="w-7/12 pt-3" src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" alt="" />
-        </div>
-        <div class="px-4 py-4 space-y-2">
-          <h3 class="underline decoration-primary-900 decoration-4 text-black-900 text-2xl font-bold">Vision</h3>
-          <p class="font-mukta text-black-800 text-lg font-semibold">सानो सानो पुंजीलाई एकीकृत गरि बृहत राष्ट्रिय
-            पुंजिमा रुपान्तरण गरि उत्पादन ब्यापार प्रबर्द्धन देशलाई आर्थिक समृद्धि मा लैजाने।</p>
-        </div>
-      </div>
-      <div class="card bg-white rounded-xl hover:shadow-lg">
-        <div class="flex items-center justify-center">
-          <img class="w-7/12 pb-2" src="https://cdn-icons-png.flaticon.com/512/1534/1534968.png" alt="" />
-          <!-- <img class="w-7/12" src="https://cdn-icons-png.flaticon.com/512/1239/1239719.png" alt="" /> -->
-        </div>
-        <div class=" px-4 py-4 space-y-2">
-          <h3 class="underline decoration-primary-900 decoration-4 text-black-900 text-2xl font-bold">Target</h3>
-          <p class="font-mukta text-black-800 text-lg font-semibold">सम्पुर्ण नेपाली जन हरु को साझा कम्पनी बनाई
-            राष्ट्रिय तथा अन्तर्राष्ट्रिय जगत मा ब्यापार ब्यवसाय गर्ने</p>
-        </div>
-      </div>
-    </main>
-  </div>
-  <!-- end of main -->
+      </main>
+  </section>
+
 
   <!-- footer section start -->
   <section class="pt-4 h-auto bg-black-900">
@@ -362,7 +337,8 @@
               us</a></li>
           <li><a class="transition duration-100 ease-in hover:text-primary-300 py-2 hover:underline " href="#">Contact
               us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-primary-300 py-2 hover:underline " href="login.html">Login</a></li>
+              <li><a class="transition duration-100 ease-in hover:text-primary-300 py-2 hover:underline " href="login.html">Login</a></li>
+              <li><a class="transition duration-100 ease-in hover:text-primary-300 py-2 hover:underline " href="login.html">Register</a></li>
         </ul>
       </div>
       <!-- end of fiiter sitemap -->

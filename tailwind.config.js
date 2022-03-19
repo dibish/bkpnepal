@@ -1,12 +1,6 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      'quicksand': ['Quicksand', 'sans-serif'],
-      'mukta' : ['Mukta', 'sans-serif'],
-      'worksans' : ['Work Sans', 'sans-serif'],
-      'fredoka': ['Fredoka', 'sans-serif'],
-    },
     colors: {
     transparent: 'transparent',
     current: 'currentColor',
@@ -36,7 +30,13 @@ module.exports = {
       900: '#171717',
       },  
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'mukta' : ['Mukta', 'sans-serif'],
+        'fredoka': ['Fredoka', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
