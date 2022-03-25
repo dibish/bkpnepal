@@ -11,11 +11,12 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <title>BKP Nepal | Login </title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>BKP Nepal | Life Changing Platform </title>
 </head>
 
-<body class="bg-[#fff] font-fredoka antialiased">
-  <div class="fixed w-full bg-white px-6 shadow-lg">
+<body class="bg-[#fff] font-fredoka antialiased text-gray-700">
+  <div class="fixed z-10 w-full bg-white px-6 shadow-lg">
     <header class="h-16 max-w-5xl mx-auto flex items-center justify-between flex-wrap">
       <a class="w-[140px]" href="/">
         <img src="images/bkp-nepal-logo.svg" alt="" srcset="">
@@ -25,9 +26,9 @@
           <li><a class="nav-links"
               href="/">Home</a></li>
           <li><a class="nav-links"
-              href="#">Action Plan</a></li>
+              href="action-plan.html">Action Plan</a></li>
           <li><a class="nav-links"
-              href="#">Membership Type</a></li>
+              href="membership-type.html">Membership Type</a></li>
           <li><a class="nav-links"
               href="upcoming-projects.html">Upcoming Projects</a></li>
           <li><a class="nav-links"
@@ -46,8 +47,8 @@
     </header>
     <!-- mobile off canvas side nav -->
     <div
-      class="mobile-side-nav fixed z-10 w-full h-screen top-0 left-0 bg-white transition-transform delay-100 -translate-x-full">
-      <div class="h-[80px] p-6 flex justify-between items-center">
+      class="mobile-side-nav fixed z-20 w-full h-screen top-0 left-0 bg-white transition-transform delay-100 -translate-x-full">
+      <div class="h-12 p-6 flex justify-between items-center">
         <svg width="140" height="30" viewBox="0 0 197 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M105.12 0.845541C105.325 0.834492 105.53 0.866875 105.722 0.940577C105.914 1.01428 106.089 1.12764 106.234 1.27326C106.373 1.41869 106.481 1.59037 106.553 1.77825C106.625 1.96612 106.658 2.16643 106.651 2.36742V27.9709C106.663 28.1977 106.627 28.4244 106.546 28.6367C106.465 28.849 106.342 29.0425 106.183 29.2049C106.025 29.3673 105.834 29.4953 105.624 29.5808C105.413 29.6662 105.188 29.7074 104.96 29.7016C104.705 29.7035 104.452 29.6562 104.214 29.5624C103.991 29.4811 103.793 29.3441 103.638 29.1645L85.9917 5.83891L86.8173 5.34156V28.2195C86.8243 28.4214 86.79 28.6227 86.7164 28.8108C86.6429 28.999 86.5316 29.1701 86.3895 29.3137C86.2396 29.4584 86.0616 29.5709 85.8667 29.6445C85.6717 29.718 85.4638 29.751 85.2556 29.7414C85.0566 29.7493 84.8581 29.7153 84.673 29.6417C84.488 29.568 84.3205 29.4562 84.1813 29.3137C84.0442 29.1675 83.9375 28.9954 83.8675 28.8076C83.7975 28.6197 83.7655 28.4199 83.7735 28.2195V2.49673C83.7575 2.27105 83.7911 2.0446 83.8718 1.83325C83.9526 1.62191 84.0786 1.43078 84.241 1.27326C84.5442 0.97768 84.9515 0.813312 85.375 0.815699C85.6373 0.818042 85.8969 0.868619 86.1409 0.964904C86.3772 1.0463 86.5847 1.19496 86.7377 1.39262L104.135 24.3999L103.598 25.0564V2.37737C103.591 2.17547 103.625 1.97426 103.699 1.7861C103.772 1.59794 103.883 1.42681 104.025 1.28321C104.169 1.14072 104.34 1.02856 104.528 0.953382C104.716 0.878202 104.917 0.841529 105.12 0.845541Z"
@@ -87,7 +88,7 @@
       </div>
       <nav class="mt-8 p-4 space-y-4">
         <a class="hover:bg-black-50 text-black-700 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
-          href="#">
+          href="/">
           <svg class="h-6 w-6 stroke-black-700" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.71429 6.85652V15.2851C2.71429 15.4366 2.7745 15.582 2.88166 15.6892C2.98883 15.7963 3.13417 15.8565 3.28572 15.8565H6.71429V10.9994C6.71429 10.7721 6.8046 10.554 6.96535 10.3933C7.12609 10.2325 7.34411 10.1422 7.57144 10.1422H10.4286C10.6559 10.1422 10.8739 10.2325 11.0347 10.3933C11.1954 10.554 11.2857 10.7721 11.2857 10.9994V15.8565H14.7143C14.8658 15.8565 15.0112 15.7963 15.1184 15.6892C15.2255 15.582 15.2857 15.4366 15.2857 15.2851V6.85652"
@@ -100,7 +101,7 @@
           <span>Home</span>
         </a>
         <a class="hover:bg-black-50 text-black-700 hover:text-black-800 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
-          href="#">
+          href="action-plan.html">
           <svg class="h-6 w-6 stroke-black-700" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
@@ -118,7 +119,7 @@
           <span>Action Plan</span>
         </a>
         <a class="hover:bg-black-50 text-black-700 hover:text-black-800 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
-          href="#">
+          href="membership-type.html">
           <svg class="h-6 w-6 stroke-black-700" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M14.2145 3.57139C14.1098 5.02387 13.0323 6.14278 11.8573 6.14278C10.6824 6.14278 9.60309 5.02423 9.50023 3.57139C9.39309 2.06034 10.442 1 11.8573 1C13.2727 1 14.3216 2.08784 14.2145 3.57139Z"
@@ -136,7 +137,7 @@
           <span>Membership Type</span>
         </a>
         <a class="hover:bg-black-50 text-black-700 hover:text-black-800 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
-          href="#">
+          href="upcoming-projects.html">
           <svg class="h-6 w-6 stroke-black-700" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.6667 10L7.93334 14.6667L6.33334 12.7967" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
@@ -150,7 +151,7 @@
           <span>Upcoming Projects</span>
         </a>
         <a class="hover:bg-black-50 text-black-700 hover:text-black-800 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
-          href="#">
+          href="about.html">
           <svg class="h-6 w-6 stroke-black-700" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.95538 9.59304C2.94092 9.82803 3.02457 10.0585 3.18639 10.2295C3.34821 10.4005 3.57371 10.4967 3.80914 10.4952L13.0651 10.4368C13.6677 10.4491 14.2667 10.3402 14.8264 10.1163C15.3903 9.89074 15.9025 9.55328 16.3323 9.12426C16.3525 9.10416 16.3716 9.08306 16.3896 9.06104C16.8134 8.54328 17.1264 7.94404 17.3092 7.30042C17.4917 6.65754 17.5405 5.98406 17.4526 5.32159C17.3073 4.18973 16.762 3.14711 15.9151 2.38212C15.0678 1.61664 13.9744 1.17969 12.8329 1.15028L12.811 1.15H6.565C6.33923 1.15 6.12274 1.23982 5.96327 1.39965C5.80381 1.55947 5.71449 1.77617 5.715 2.00194L5.72417 6.0156C4.87617 6.21158 4.23871 6.73226 3.80419 7.3194C3.2676 8.04445 2.99683 8.91948 2.95538 9.59304ZM12.1087 5.91698H10.3531L10.3505 5.34521H12.1087C12.1853 5.34521 12.2587 5.37562 12.3128 5.42973C12.3664 5.48337 12.3968 5.55597 12.3973 5.63178C12.3964 5.70735 12.3659 5.77959 12.3123 5.83294C12.2582 5.88676 12.185 5.91698 12.1087 5.91698Z"
@@ -162,7 +163,7 @@
           <span>About Us</span>
         </a>
         <a class="hover:bg-black-50 text-black-700 hover:text-black-800 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
-          href="#">
+          href="contact.html">
           <svg class="h-6 w-6 stroke-black-700" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M10.7154 1.13942H2.42873C2.04981 1.13942 1.6864 1.28994 1.41847 1.55788C1.15053 1.82582 1 2.18922 1 2.56815V11.1405C1 11.5195 1.15053 11.8829 1.41847 12.1508C1.6864 12.4187 2.04981 12.5693 2.42873 12.5693H14.3847C14.7636 12.5693 15.127 12.4187 15.395 12.1508C15.6629 11.8829 15.8134 11.5195 15.8134 11.1405V6.24713"
@@ -186,6 +187,7 @@
     </div>
     <!-- end mobile off canvas side nav -->
   </div>
+
 
 
   <section class="pt-32 pb-16  bg-gray-100">
@@ -216,9 +218,8 @@
       </main>
   </section>
 
-
-   <!-- footer section start -->
-   <section class="pt-4 h-auto bg-black">
+  <!-- footer section start -->
+  <section class="pt-4 h-auto bg-black">
     <footer class="max-w-5xl mx-auto  px-6 py-8 text-black-100 md:flex flex-wrap gap-4 flex-row justify-between items-start">
       <div>
         <svg class="w-[140px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 39.6">
@@ -297,17 +298,17 @@
       <div class="py-6 md:py-0">
         <h3 class="text-xl text-brand-500">Sitemaps</h3>
         <ul class="space-y-2 pt-4 text-black-100 text-lg">
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Home</a>
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="/">Home</a>
           </li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Action
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="action-plan.html">Action
               Plan</a></li>
           <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
-              href="#">Membership Type</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Upcoming
+              href="membership-type.html">Membership Type</a></li>
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="upcoming-projects.html">Upcoming
               Projects</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">About
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="about.html">About
               us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Contact
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="contact.html">Contact
               us</a></li>
           <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="login.html">Login</a></li>
         </ul>
@@ -358,7 +359,7 @@
 
     </footer>
     <!-- copyright section -->
-    <div class="w-full px-6 bg-[#222222] text-black-100 md:text-center py-6">
+    <div class="w-full px-6 bg-black-dark text-black-100 md:text-center py-6">
       <p class="mb-2">&copy Copyright <span>Bishwokarma Trading and Promotors Pvt. ltd.</span> ,
         All Rights Reserved.</p>
       <span>
@@ -377,13 +378,12 @@
   </section>
   <!-- footer section end -->
 
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    const menu = document.querySelector('.menu')
-    const mobileSideNav = document.querySelector('.mobile-side-nav')
-    const closeNav = document.querySelector('.close-side-nav')
-
-    menu.addEventListener('click', () => mobileSideNav.classList.toggle('-translate-x-full'))
-    closeNav.addEventListener('click', () => mobileSideNav.classList.toggle('-translate-x-full'))
+    AOS.init({
+      offset : 120,
+    });
   </script>
 
 </body>
