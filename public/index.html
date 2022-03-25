@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>BKP Nepal | Life Changing Platform </title>
 </head>
 
@@ -23,15 +24,15 @@
       <nav class="hidden lg:block">
         <ul class="flex items-center text-sm uppercase space-x-0 text-gray-800">
           <li><a class="nav-links"
-              href="#">Home</a></li>
+              href="/">Home</a></li>
           <li><a class="nav-links"
               href="#">Action Plan</a></li>
           <li><a class="nav-links"
               href="#">Membership Type</a></li>
           <li><a class="nav-links"
-              href="#">Upcoming Projects</a></li>
+              href="upcoming-projects.html">Upcoming Projects</a></li>
           <li><a class="nav-links"
-              href="#">About us</a></li>
+              href="about.html">About us</a></li>
           <li><a class="nav-links"
               href="contact.html">Contact us</a></li>
         </ul>
@@ -189,14 +190,14 @@
 
   <!-- hero section -->
   <section
-    class="bg-brand-50 w-full bg-fixed bg-no-repeat bg-cover bg-right-bottom md:bg-center bg-[url('https://img.freepik.com/free-photo/bank-with-coins-green-sprout_169016-3685.jpg?t=st=1647629458~exp=1647630058~hmac=28fd22e915d65538d5ea5996c4319c4213ebcb82575f561789b563a1528ad6e2&w=826')]">
+    class="w-full bg-[url('https://images.unsplash.com/photo-1519719498756-2f0d81cdf13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto')] bg-fixed bg-no-repeat bg-cover">
     <div
-      class="w-full min-h-[100vh] bg-black bg-opacity-80 flex flex-col justify-center items-center ">
-      <h1 class="py-2 text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-50 to-brand-700 text-center text-4xl md:text-6xl font-mukta font-black md:max-w-xl">जीवन बदल्ने साझा
+      class="w-full min-h-[100vh] bg-black bg-opacity-75 flex flex-col justify-center items-center ">
+      <h1 class="mt-8 py-2 text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-50 to-brand-700 text-center text-4xl md:text-6xl font-mukta font-black md:max-w-xl">जीवन बदल्ने साझा
         मंचमा हजुरलाई स्वागत छ।</h1>
       <div>
         <button
-          class="text-white text-md md:text-2xl transition-all duration-300 ease-in-out bg-gradient-to-tr from-brand-800 to-brand-dark hover:from-brand-dark hover:to-brand-800 transform hover:scale-105 mt-4 md:mt-8 px-5 py-3 rounded-md shadow shadow-brand-500/20 focus:ring-2 focus:ring-white focus:-ring-offset-4">Become
+          class="text-white text-md md:text-2xl bg-brand  hover:bg-brand-800 mt-4 md:mt-8 px-6 py-2 rounded-md focus:outline  focus:outline-4 focus:outline-brand-200 focus:outline-offset-2">Become
           a member</button>
       </div>
     </div>
@@ -205,9 +206,9 @@
 
   <!-- start of why choose bkp nepal -->
   <section class="bg-black-50">
-    <div class="max-w-5xl mx-auto px-8 py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-8 py-16 md:py-24"  >
       <h3 class="text-4xl font-semibold py-2">Why Choose BKPNepal?</h3>
-      <div class="grid md:grid-cols-4 gap-4 mt-4">
+      <div class="grid md:grid-cols-4 gap-4 mt-4" data-aos="slide-up">
         <div class="bg-white shadow p-4 py-8 border-l-8 border-l-brand-700 rounded-md">
           <span class="text-sm">For</span>
           <p class="text-2xl">Investment</p>
@@ -231,18 +232,18 @@
 
   <!-- about us section -->
   <section class="bg-white">
-    <div class="section">
-      <h3 class="font-mukta text-3xl font-extrabold underline underline-offset-2 decoration-brand-800">हाम्रो बारेमा</h3>
-      <p class="my-6 max-w-xl text-sm leading-relaxed font-semibold text-black-600">विविध बस्तु तथा क्षेत्र हरुमा राष्ट्रिय तथा अन्तर्राष्ट्रिय स्तरमा ब्यापार, ब्यापार प्रबर्द्धन, र ब्यवस्थापन गर्ने प्रमुख उदेश्यका साथ मिति २०७३कार्तिक २६ गते कम्पनी रजिस्ट्रार कार्यलयमा दर्ता भई संचालनमा आएको कम्पनी हो बिश्वकर्मा टेडिङ्ग एण्ड प्रमोटर्स प्रा.लि. । यस कम्पनीको एक मात्र संचालक इ.सन्जुक्ता सुनार हुनुहुन्छ । कम्पनीको मुख्य कार्यलय हाल बुटवल -११ रुपन्देही मा रहेको छ। . . .</p>
-      <a href="about.html" class="btn bg-brand-50 text-brand-dark hover:bg-brand-200 shadow-none rounded-full font-bold">पुरा पढ्नुस</a>
+    <div class="section font-mukta" data-aos="slide-right">
+      <h3  class="text-center md:text-left text-3xl font-extrabold underline underline-offset-2 decoration-brand-800">हाम्रो बारेमा</h3>
+      <p class="my-6 text-xl md:max-w-3xl leading-relaxed md:font-normal text-black-600">विविध बस्तु तथा क्षेत्र हरुमा राष्ट्रिय तथा अन्तर्राष्ट्रिय स्तरमा ब्यापार, ब्यापार प्रबर्द्धन, र ब्यवस्थापन गर्ने प्रमुख उदेश्यका साथ मिति २०७३कार्तिक २६ गते कम्पनी रजिस्ट्रार कार्यलयमा दर्ता भई संचालनमा आएको कम्पनी हो बिश्वकर्मा टेडिङ्ग एण्ड प्रमोटर्स प्रा.लि. । यस कम्पनीको एक मात्र संचालक इ.सन्जुक्ता सुनार हुनुहुन्छ । कम्पनीको मुख्य कार्यलय हाल बुटवल -११ रुपन्देही मा रहेको छ।</p>
+      <a href="about.html" class="bg-brand text-sm text-white hover:bg-brand-800 rounded-full px-6 py-1">पुरा पढ्नुस</a>
     </div>
 
   </section>
 <!-- end of about us section -->
 
 <!-- hamro mantra section -->
-  <section class="bg-white border-t border-t-black-50">
-    <div class="section">
+  <section class="bg-white border-t border-t-black-50" >
+    <div class="section" data-aos="fade-in">
       <h3 class="font-mukta text-center sm:text-left text-3xl font-extrabold underline underline-offset-2 decoration-brand-800">हाम्रो मन्त्र</h3>
       <div class="grid md:grid-cols-3 gap-8 mt-8 text-xl font-semibold">
         <div class="bg-black-50 p-4 rounded-lg shadow-sm">
@@ -462,13 +463,12 @@
   </section>
   <!-- footer section end -->
 
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    const menu = document.querySelector('.menu')
-    const mobileSideNav = document.querySelector('.mobile-side-nav')
-    const closeNav = document.querySelector('.close-side-nav')
-
-    menu.addEventListener('click', () => mobileSideNav.classList.toggle('-translate-x-full'))
-    closeNav.addEventListener('click', () => mobileSideNav.classList.toggle('-translate-x-full'))
+    AOS.init({
+      offset : 120,
+    });
   </script>
 
 </body>

@@ -11,17 +11,18 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <title>BKP Nepal | Login </title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>BKP Nepal | Life Changing Platform </title>
 </head>
 
-<body class="bg-[#fff] font-fredoka antialiased">
-  <div class="fixed w-full bg-white px-6 shadow-lg">
+<body class="bg-[#fff] font-fredoka antialiased text-gray-700">
+  <div class="fixed z-10 w-full bg-white px-6 shadow-lg">
     <header class="h-16 max-w-5xl mx-auto flex items-center justify-between flex-wrap">
       <a class="w-[140px]" href="/">
         <img src="images/bkp-nepal-logo.svg" alt="" srcset="">
       </a>
       <nav class="hidden lg:block">
-        <ul class="flex items-center text-sm uppercase space-x-0 text-gray-800">
+        <ul class="flex items-center text-sm uppercase space-x-0 text-black">
           <li><a class="nav-links"
               href="/">Home</a></li>
           <li><a class="nav-links"
@@ -46,8 +47,8 @@
     </header>
     <!-- mobile off canvas side nav -->
     <div
-      class="mobile-side-nav fixed z-10 w-full h-screen top-0 left-0 bg-white transition-transform delay-100 -translate-x-full">
-      <div class="h-[80px] p-6 flex justify-between items-center">
+      class="mobile-side-nav fixed z-20 w-full h-screen top-0 left-0 bg-white transition-transform delay-100 -translate-x-full">
+      <div class="h-12 p-6 flex justify-between items-center">
         <svg width="140" height="30" viewBox="0 0 197 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M105.12 0.845541C105.325 0.834492 105.53 0.866875 105.722 0.940577C105.914 1.01428 106.089 1.12764 106.234 1.27326C106.373 1.41869 106.481 1.59037 106.553 1.77825C106.625 1.96612 106.658 2.16643 106.651 2.36742V27.9709C106.663 28.1977 106.627 28.4244 106.546 28.6367C106.465 28.849 106.342 29.0425 106.183 29.2049C106.025 29.3673 105.834 29.4953 105.624 29.5808C105.413 29.6662 105.188 29.7074 104.96 29.7016C104.705 29.7035 104.452 29.6562 104.214 29.5624C103.991 29.4811 103.793 29.3441 103.638 29.1645L85.9917 5.83891L86.8173 5.34156V28.2195C86.8243 28.4214 86.79 28.6227 86.7164 28.8108C86.6429 28.999 86.5316 29.1701 86.3895 29.3137C86.2396 29.4584 86.0616 29.5709 85.8667 29.6445C85.6717 29.718 85.4638 29.751 85.2556 29.7414C85.0566 29.7493 84.8581 29.7153 84.673 29.6417C84.488 29.568 84.3205 29.4562 84.1813 29.3137C84.0442 29.1675 83.9375 28.9954 83.8675 28.8076C83.7975 28.6197 83.7655 28.4199 83.7735 28.2195V2.49673C83.7575 2.27105 83.7911 2.0446 83.8718 1.83325C83.9526 1.62191 84.0786 1.43078 84.241 1.27326C84.5442 0.97768 84.9515 0.813312 85.375 0.815699C85.6373 0.818042 85.8969 0.868619 86.1409 0.964904C86.3772 1.0463 86.5847 1.19496 86.7377 1.39262L104.135 24.3999L103.598 25.0564V2.37737C103.591 2.17547 103.625 1.97426 103.699 1.7861C103.772 1.59794 103.883 1.42681 104.025 1.28321C104.169 1.14072 104.34 1.02856 104.528 0.953382C104.716 0.878202 104.917 0.841529 105.12 0.845541Z"
@@ -186,205 +187,236 @@
     </div>
     <!-- end mobile off canvas side nav -->
   </div>
-
-
-  <section class="pt-32 pb-16  bg-gray-100">
-      <main class="max-w-5xl md:px-6 mx-auto grid place-content-center">
-        <div class="bg-white p-4 md:p-6 shadow rounded-md">
-            <h3 class="font-semibold text-black-700 text-xl mb-4 flex items-center gap-2">
-                <svg class="w-6 h-6 stroke-black-700" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
-               <span>Login</span> 
-            </h3>
-            <form class="md:min-w-[350px] space-y-2 flex flex-col">
-                <label class="mb-2 block" for="name">
-                    <span>Username</span>
-                    <input class="input" type="text" name="name" id="name">
-                </label>
-                <label for="password">
-                    <span>Password</span>
-                    <input class="input" type="password" name="password" id="password">
-                </label>
-                <label for="remember">
-                    <input class="accent-black mt-2" type="checkbox" name="remember" id="remember">
-                    <span>Remember me</span>
-                </label>
-                
-                <button class="btn" type="submit">Login</button>
-                <a class="block underline mt-8 text-center" href="#forgot">Forgot Password ?</a>
-            </form>
+  <!-- end of header and mobile nav -->
+<section class="bg-black-50 pt-32 pb-16">
+    <div class="max-w-5xl mx-auto bg-white p-8 pb-16 rounded-lg text-xl shadow">
+        <h3 class="font-mukta font-extrabold text-5xl my-8 pb-4">भावी परियोजना</h3>
+        <div class="grid gap-6 md:grid-cols-3">
+            <div class=" h-60 transition duration-500 ease-in-out rounded-xl hover:rounded-3xl overflow-hidden bg-[url('https://images.unsplash.com/photo-1540340061722-9293d5163008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80')] bg-cover bg-center">
+                <div class="w-full h-full transition duration-300 ease-in-out bg-black bg-opacity-75 hover:bg-opacity-50 flex flex-col justify-center items-center">
+                    <img class="" src="images/bkp-icon.svg" alt="bkp logo icon" srcset="">
+                    <span class="text-white text-2xl tracking-widest">Store</span>
+                </div>  
+            </div>
+            <div class="h-60 transition duration-300 ease-in-out rounded-xl hover:rounded-3xl  overflow-hidden bg-[url('https://images.unsplash.com/photo-1576181456177-2b99ac0aa1ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80')] bg-cover bg-center">
+                <div class="w-full h-full transition duration-300 ease-in-out bg-black bg-opacity-75 hover:bg-opacity-50 flex flex-col justify-center items-center">
+                    <img src="images/bkp-icon.svg" alt="bkp logo icon" srcset="">
+                    <span class="text-white text-2xl tracking-widest">Agro</span>
+                </div>  
+            </div>
+            <div class="h-60 transition duration-300 ease-in-out rounded-xl hover:rounded-3xl  overflow-hidden bg-[url('https://images.unsplash.com/photo-1550666253-d6649814e4bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80')] bg-cover bg-center">
+                <div class="w-full h-full transition duration-300 ease-in-out bg-black bg-opacity-75 hover:bg-opacity-50 flex flex-col justify-center items-center">
+                    <img src="images/bkp-icon.svg" alt="bkp logo icon" srcset="">
+                    <span class="text-white text-2xl tracking-widest">Infosys</span>
+                </div>  
+            </div>
+            <div class="h-60 transition duration-300 ease-in-out rounded-xl hover:rounded-3xl overflow-hidden bg-[url('https://images.unsplash.com/photo-1594709286069-f1d05fd0dd44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')] bg-cover bg-center">
+                <div class="w-full h-full transition duration-300 ease-in-out bg-black bg-opacity-75 hover:bg-opacity-50 flex flex-col justify-center items-center">
+                    <img src="images/bkp-icon.svg" alt="bkp logo icon" srcset="">
+                    <span class="text-white text-2xl tracking-widest">Jewellers</span>
+                </div>  
+            </div>
+            <div class="h-60 transition duration-300 ease-in-out rounded-xl hover:rounded-3xl overflow-hidden bg-[url('https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=476&q=80')] bg-cover bg-center">
+                <div class="w-full h-full transition duration-300 ease-in-out bg-black bg-opacity-75 hover:bg-opacity-50 flex flex-col justify-center items-center">
+                    <img src="images/bkp-icon.svg" alt="bkp logo icon" srcset="">
+                    <span class="text-white text-2xl tracking-widest">Developers</span>
+                </div>  
+            </div>
+            <div class="h-60 transition duration-300 ease-in-out rounded-xl hover:rounded-3xl  overflow-hidden bg-[url('https://images.unsplash.com/photo-1629096193181-89aa83f523cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=528&q=80')] bg-cover bg-center">
+                <div class="w-full h-full transition duration-300 ease-in-out bg-black bg-opacity-75 hover:bg-opacity-50 flex flex-col justify-center items-center">
+                    <img src="images/bkp-icon.svg" alt="bkp logo icon" srcset="">
+                    <span class="text-white text-2xl tracking-widest">Entertainments</span>
+                </div>  
+            </div>
+            <div class="h-60 transition duration-300 ease-in-out rounded-xl hover:rounded-3xl overflow-hidden bg-[url('https://images.unsplash.com/photo-1617906681842-94a418bb88f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80')] bg-cover bg-center">
+                <div class="w-full h-full transition duration-300 ease-in-out bg-black bg-opacity-75 hover:bg-opacity-50 flex flex-col justify-center items-center">
+                    <img src="images/bkp-icon.svg" alt="bkp logo icon" srcset="">
+                    <span class="text-white text-2xl tracking-widest">Industries</span>
+                </div>  
+            </div>  
+            <div class="h-60 border-4 border-dashed border-black-500  transition duration-300 ease-in-out rounded-xl flex flex-col justify-center items-center">
+                <a href="about.html" class="flex flex-col text-center bg-black-800 transition duration-300 ease-in-out py-2 px-8 text-white hover:bg-brand rounded-xl">
+                    <span >Learn</span>
+                    <span >About us</span>
+                </a>  
+            </div>  
+            <div class="h-60 border-4 border-dashed border-black-500  transition duration-300 ease-in-out rounded-xl flex flex-col justify-center items-center">
+                <a href="#" class="flex flex-col text-center bg-black-800 transition duration-300 ease-in-out py-2 px-8 text-white hover:bg-brand rounded-xl">
+                    <span >Join</span>
+                    <span >BKPNepal</span>
+                </a>  
+            </div>  
         </div>
-      </main>
-  </section>
+    </div>
+</section>
 
+<!-- footer section start -->
+<section class="pt-4 h-auto bg-black">
+  <footer class="max-w-5xl mx-auto  px-6 py-8 text-black-100 md:flex flex-wrap gap-4 flex-row justify-between items-start">
+    <div>
+      <svg class="w-[140px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 39.6">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #ccc;
+            }
 
-   <!-- footer section start -->
-   <section class="pt-4 h-auto bg-black">
-    <footer class="max-w-5xl mx-auto  px-6 py-8 text-black-100 md:flex flex-wrap gap-4 flex-row justify-between items-start">
-      <div>
-        <svg class="w-[140px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 39.6">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #ccc;
-              }
-
-              .cls-2 {
-                fill: #ed1c24;
-              }
-            </style>
-          </defs>
-          <path class="cls-1"
-            d="M107.68,5.57A1.47,1.47,0,0,1,108.8,6a1.52,1.52,0,0,1,.42,1.1V32.84a1.66,1.66,0,0,1-1.7,1.74,2,2,0,0,1-.75-.14,1.4,1.4,0,0,1-.58-.4L88.45,10.59l.83-.5v23a1.49,1.49,0,0,1-.43,1.1,1.54,1.54,0,0,1-1.14.43,1.43,1.43,0,0,1-1.08-.43,1.52,1.52,0,0,1-.41-1.1V7.23A1.56,1.56,0,0,1,86.69,6a1.62,1.62,0,0,1,1.14-.46,2.15,2.15,0,0,1,.77.15,1.29,1.29,0,0,1,.6.43l17.49,23.13-.54.66V7.11a1.49,1.49,0,0,1,.43-1.1A1.52,1.52,0,0,1,107.68,5.57Z">
-          </path>
-          <path class="cls-1"
-            d="M115.52,5.57h14.75a1.73,1.73,0,0,1,1.2.46,1.51,1.51,0,0,1,.5,1.16,1.45,1.45,0,0,1-.5,1.14,1.75,1.75,0,0,1-1.2.43H116.92l.38-.7V18.54l-.42-.45H128.4a1.76,1.76,0,0,1,1.21.45,1.53,1.53,0,0,1,.49,1.17,1.44,1.44,0,0,1-.49,1.14,1.79,1.79,0,0,1-1.21.43H117l.29-.37V31.64l-.25-.29h13.22a1.64,1.64,0,0,1,1.2.5A1.55,1.55,0,0,1,132,33a1.52,1.52,0,0,1-.5,1.16,1.72,1.72,0,0,1-1.2.45H115.52a1.59,1.59,0,0,1-1.19-.49,1.73,1.73,0,0,1-.47-1.21V7.23a1.62,1.62,0,0,1,1.66-1.66Z">
-          </path>
-          <path class="cls-1"
-            d="M147.07,5.57a7.72,7.72,0,0,1,4.1,1.12,8,8,0,0,1,2.88,3.07,9.1,9.1,0,0,1,1.06,4.43,9.27,9.27,0,0,1-1.06,4.44,8.26,8.26,0,0,1-2.88,3.15,7.49,7.49,0,0,1-4.1,1.16h-8.41l.29-.5V32.88a1.77,1.77,0,0,1-.46,1.21,1.64,1.64,0,0,1-2.34,0,1.8,1.8,0,0,1-.44-1.21V7.23a1.64,1.64,0,0,1,1.66-1.66Zm0,14.18a4,4,0,0,0,2.4-.75,5.23,5.23,0,0,0,1.66-2,6.22,6.22,0,0,0,.62-2.78,5.86,5.86,0,0,0-.62-2.77,5.21,5.21,0,0,0-1.66-1.93,4.11,4.11,0,0,0-2.4-.73h-8.41l.29-.45V20.16l-.29-.41Z">
-          </path>
-          <path class="cls-1"
-            d="M166.88,9.88l-9.74,23.71a1.54,1.54,0,0,1-.58.79,1.64,1.64,0,0,1-2-.13,1.42,1.42,0,0,1-.37-1,1.24,1.24,0,0,1,.08-.62L165,6.53a1.52,1.52,0,0,1,1.61-1.08,1.76,1.76,0,0,1,1,.29,1.48,1.48,0,0,1,.6.79l10.69,25.86a1.92,1.92,0,0,1,.12.66,1.48,1.48,0,0,1-.49,1.18,1.67,1.67,0,0,1-1.12.44,1.56,1.56,0,0,1-.91-.29,1.7,1.7,0,0,1-.62-.83L166,9.84Zm-7.66,16.95,1.41-3.23h12.3l.63,3.23Z">
-          </path>
-          <path class="cls-1"
-            d="M198.3,31.31a1.66,1.66,0,0,1,1.2.48A1.56,1.56,0,0,1,200,33a1.52,1.52,0,0,1-.5,1.16,1.72,1.72,0,0,1-1.2.45H184a1.57,1.57,0,0,1-1.18-.49,1.7,1.7,0,0,1-.48-1.21V7.23a1.58,1.58,0,0,1,.5-1.18A1.72,1.72,0,0,1,184,5.57a1.68,1.68,0,0,1,1.21.48,1.57,1.57,0,0,1,.49,1.18V32.06l-.82-.75Z">
-          </path>
-          <path class="cls-2"
-            d="M72.27,4.76H61.55v14H61c-3.21,0-5.81,3.05-5.81,6.8h6.37l0,9.29h6l0-9.48h5.54s8.32-1,8.32-9.84c0-10.63-9.12-10.8-9.12-10.8m-.87,14H67.53V12h4s2.73-.11,2.9,3.28a3.08,3.08,0,0,1-3,3.47">
-          </path>
-          <path class="cls-2"
-            d="M46,20.91,59.63,4.72H51.17l-9.79,11.2V4.72H35.1c-3.21,0-5.81,3-5.81,6.8h6.12V34.88h6v-9l9.46,9H60Z">
-          </path>
-          <path class="cls-2"
-            d="M3.39,19.11c.12-1.95,1.64-5.38,5-5.38H8.6l0-.23L8.58,4.74H20.32a7.39,7.39,0,0,1,7.14,6.45A7.59,7.59,0,0,1,25.81,17a6.85,6.85,0,0,1-5,2ZM14.11,13.7H19a2.14,2.14,0,0,0,2.14-2.13h0A2.14,2.14,0,0,0,19,9.43H14.09Z">
-          </path>
-          <path class="cls-2"
-            d="M8.58,34.86l.07-9H0a5.38,5.38,0,0,1,5.09-5.43H8.37l13.59,0c3.54,0,5.37,1.27,6.58,2.71A7.33,7.33,0,0,1,30,28.66a6.65,6.65,0,0,1-6.6,6.2Zm5.51-4.57,8-.06a2.17,2.17,0,0,0,2.16-2.17h0a2.17,2.17,0,0,0-2.17-2.16h-8Z">
-          </path>
-        </svg>
-        <div class="pt-6">
-          <address class="space-y-2 not-italic text-lg ">
-            <p class="flex space-x-4">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              <span class="hover:text-brand-200">Butwal 11, Rupendahi</span>
-            </p>
-            <p class="flex space-x-4 hover:text-brand-200">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-              </svg>
-              <a class="hover:text-brand-200 underline" href="mailto: administration@bkpnepal.com">administration@bkpnepal.com</a>
-            </p>
-            <p class="flex space-x-4">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14.414 7l3.293-3.293a1 1 0 00-1.414-1.414L13 5.586V4a1 1 0 10-2 0v4.003a.996.996 0 00.617.921A.997.997 0 0012 9h4a1 1 0 100-2h-1.586z">
-                </path>
-                <path
-                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-                </path>
-              </svg>
-              <a class="hover:text-brand-200 underline" href="tel:+9779857039526">+977-9857039526</a>
-            </p>
-          </address>
-        </div>
+            .cls-2 {
+              fill: #ed1c24;
+            }
+          </style>
+        </defs>
+        <path class="cls-1"
+          d="M107.68,5.57A1.47,1.47,0,0,1,108.8,6a1.52,1.52,0,0,1,.42,1.1V32.84a1.66,1.66,0,0,1-1.7,1.74,2,2,0,0,1-.75-.14,1.4,1.4,0,0,1-.58-.4L88.45,10.59l.83-.5v23a1.49,1.49,0,0,1-.43,1.1,1.54,1.54,0,0,1-1.14.43,1.43,1.43,0,0,1-1.08-.43,1.52,1.52,0,0,1-.41-1.1V7.23A1.56,1.56,0,0,1,86.69,6a1.62,1.62,0,0,1,1.14-.46,2.15,2.15,0,0,1,.77.15,1.29,1.29,0,0,1,.6.43l17.49,23.13-.54.66V7.11a1.49,1.49,0,0,1,.43-1.1A1.52,1.52,0,0,1,107.68,5.57Z">
+        </path>
+        <path class="cls-1"
+          d="M115.52,5.57h14.75a1.73,1.73,0,0,1,1.2.46,1.51,1.51,0,0,1,.5,1.16,1.45,1.45,0,0,1-.5,1.14,1.75,1.75,0,0,1-1.2.43H116.92l.38-.7V18.54l-.42-.45H128.4a1.76,1.76,0,0,1,1.21.45,1.53,1.53,0,0,1,.49,1.17,1.44,1.44,0,0,1-.49,1.14,1.79,1.79,0,0,1-1.21.43H117l.29-.37V31.64l-.25-.29h13.22a1.64,1.64,0,0,1,1.2.5A1.55,1.55,0,0,1,132,33a1.52,1.52,0,0,1-.5,1.16,1.72,1.72,0,0,1-1.2.45H115.52a1.59,1.59,0,0,1-1.19-.49,1.73,1.73,0,0,1-.47-1.21V7.23a1.62,1.62,0,0,1,1.66-1.66Z">
+        </path>
+        <path class="cls-1"
+          d="M147.07,5.57a7.72,7.72,0,0,1,4.1,1.12,8,8,0,0,1,2.88,3.07,9.1,9.1,0,0,1,1.06,4.43,9.27,9.27,0,0,1-1.06,4.44,8.26,8.26,0,0,1-2.88,3.15,7.49,7.49,0,0,1-4.1,1.16h-8.41l.29-.5V32.88a1.77,1.77,0,0,1-.46,1.21,1.64,1.64,0,0,1-2.34,0,1.8,1.8,0,0,1-.44-1.21V7.23a1.64,1.64,0,0,1,1.66-1.66Zm0,14.18a4,4,0,0,0,2.4-.75,5.23,5.23,0,0,0,1.66-2,6.22,6.22,0,0,0,.62-2.78,5.86,5.86,0,0,0-.62-2.77,5.21,5.21,0,0,0-1.66-1.93,4.11,4.11,0,0,0-2.4-.73h-8.41l.29-.45V20.16l-.29-.41Z">
+        </path>
+        <path class="cls-1"
+          d="M166.88,9.88l-9.74,23.71a1.54,1.54,0,0,1-.58.79,1.64,1.64,0,0,1-2-.13,1.42,1.42,0,0,1-.37-1,1.24,1.24,0,0,1,.08-.62L165,6.53a1.52,1.52,0,0,1,1.61-1.08,1.76,1.76,0,0,1,1,.29,1.48,1.48,0,0,1,.6.79l10.69,25.86a1.92,1.92,0,0,1,.12.66,1.48,1.48,0,0,1-.49,1.18,1.67,1.67,0,0,1-1.12.44,1.56,1.56,0,0,1-.91-.29,1.7,1.7,0,0,1-.62-.83L166,9.84Zm-7.66,16.95,1.41-3.23h12.3l.63,3.23Z">
+        </path>
+        <path class="cls-1"
+          d="M198.3,31.31a1.66,1.66,0,0,1,1.2.48A1.56,1.56,0,0,1,200,33a1.52,1.52,0,0,1-.5,1.16,1.72,1.72,0,0,1-1.2.45H184a1.57,1.57,0,0,1-1.18-.49,1.7,1.7,0,0,1-.48-1.21V7.23a1.58,1.58,0,0,1,.5-1.18A1.72,1.72,0,0,1,184,5.57a1.68,1.68,0,0,1,1.21.48,1.57,1.57,0,0,1,.49,1.18V32.06l-.82-.75Z">
+        </path>
+        <path class="cls-2"
+          d="M72.27,4.76H61.55v14H61c-3.21,0-5.81,3.05-5.81,6.8h6.37l0,9.29h6l0-9.48h5.54s8.32-1,8.32-9.84c0-10.63-9.12-10.8-9.12-10.8m-.87,14H67.53V12h4s2.73-.11,2.9,3.28a3.08,3.08,0,0,1-3,3.47">
+        </path>
+        <path class="cls-2"
+          d="M46,20.91,59.63,4.72H51.17l-9.79,11.2V4.72H35.1c-3.21,0-5.81,3-5.81,6.8h6.12V34.88h6v-9l9.46,9H60Z">
+        </path>
+        <path class="cls-2"
+          d="M3.39,19.11c.12-1.95,1.64-5.38,5-5.38H8.6l0-.23L8.58,4.74H20.32a7.39,7.39,0,0,1,7.14,6.45A7.59,7.59,0,0,1,25.81,17a6.85,6.85,0,0,1-5,2ZM14.11,13.7H19a2.14,2.14,0,0,0,2.14-2.13h0A2.14,2.14,0,0,0,19,9.43H14.09Z">
+        </path>
+        <path class="cls-2"
+          d="M8.58,34.86l.07-9H0a5.38,5.38,0,0,1,5.09-5.43H8.37l13.59,0c3.54,0,5.37,1.27,6.58,2.71A7.33,7.33,0,0,1,30,28.66a6.65,6.65,0,0,1-6.6,6.2Zm5.51-4.57,8-.06a2.17,2.17,0,0,0,2.16-2.17h0a2.17,2.17,0,0,0-2.17-2.16h-8Z">
+        </path>
+      </svg>
+      <div class="pt-6">
+        <address class="space-y-2 not-italic text-lg ">
+          <p class="flex space-x-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="hover:text-brand-200">Butwal 11, Rupendahi</span>
+          </p>
+          <p class="flex space-x-4 hover:text-brand-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            <a class="hover:text-brand-200 underline" href="mailto: administration@bkpnepal.com">administration@bkpnepal.com</a>
+          </p>
+          <p class="flex space-x-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.414 7l3.293-3.293a1 1 0 00-1.414-1.414L13 5.586V4a1 1 0 10-2 0v4.003a.996.996 0 00.617.921A.997.997 0 0012 9h4a1 1 0 100-2h-1.586z">
+              </path>
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+              </path>
+            </svg>
+            <a class="hover:text-brand-200 underline" href="tel:+9779857039526">+977-9857039526</a>
+          </p>
+        </address>
       </div>
+    </div>
 
-      <!-- footer sitemap -->
-      <div class="py-6 md:py-0">
-        <h3 class="text-xl text-brand-500">Sitemaps</h3>
-        <ul class="space-y-2 pt-4 text-black-100 text-lg">
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Home</a>
-          </li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Action
-              Plan</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
-              href="#">Membership Type</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Upcoming
-              Projects</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">About
-              us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Contact
-              us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="login.html">Login</a></li>
-        </ul>
-      </div>
-      <!-- end of footer sitemap -->
+    <!-- footer sitemap -->
+    <div class="py-6 md:py-0">
+      <h3 class="text-xl text-brand-500">Sitemaps</h3>
+      <ul class="space-y-2 pt-4 text-black-100 text-lg">
+        <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Home</a>
+        </li>
+        <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Action
+            Plan</a></li>
+        <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+            href="#">Membership Type</a></li>
+        <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">Upcoming
+            Projects</a></li>
+        <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="#">About
+            us</a></li>
+        <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="contact.html">Contact
+            us</a></li>
+        <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <!-- end of footer sitemap -->
 
-      <!-- connect with us -->
-      <div class="">
-        <h3 class="text-brand-500 text-xl">Follow us</h3>
-        <div class="flex space-x-4 mt-4 items-center">
-          <!-- faccebook icon -->
-          <a href="#" target="_blank">
-            <svg class="w-6 fill-white hover:fill-gray-600" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z" />
-            </svg>
-          </a>
-          <!--twitter icon -->
-          <a href="#" target="_blank">
-            <svg class="w-6 fill-white hover:fill-gray-600" viewBox="0 0 48 48" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.1003 43.5C33.2091 43.5 43.1166 28.4935 43.1166 15.4838C43.1166 15.0619 43.1072 14.6307 43.0884 14.2088C45.0158 12.815 46.679 11.0886 48 9.11066C46.205 9.90926 44.2993 10.4308 42.3478 10.6575C44.4026 9.42588 45.9411 7.491 46.6781 5.21159C44.7451 6.35718 42.6312 7.16528 40.4269 7.60128C38.9417 6.02318 36.978 4.97829 34.8394 4.62816C32.7008 4.27803 30.5064 4.64216 28.5955 5.66425C26.6846 6.68635 25.1636 8.30947 24.2677 10.2827C23.3718 12.2559 23.1509 14.4693 23.6391 16.5807C19.725 16.3842 15.8959 15.3675 12.4 13.5963C8.90405 11.825 5.81939 9.33893 3.34594 6.29909C2.0888 8.46655 1.70411 11.0314 2.27006 13.4722C2.83601 15.9131 4.31013 18.047 6.39281 19.44C4.82926 19.3904 3.29995 18.9694 1.93125 18.2119V18.3338C1.92985 20.6084 2.7162 22.8132 4.15662 24.5736C5.59704 26.334 7.60265 27.5412 9.8325 27.99C8.38411 28.3863 6.86396 28.4441 5.38969 28.1588C6.01891 30.1149 7.24315 31.8258 8.89154 33.0527C10.5399 34.2796 12.5302 34.9613 14.5847 35.0025C11.0968 37.7423 6.78835 39.2283 2.35313 39.2213C1.56657 39.2201 0.780798 39.1719 0 39.0769C4.50571 41.9676 9.74706 43.5028 15.1003 43.5Z" />
-            </svg>
-          </a>
-          <!-- linked icon -->
-          <a href="#" target="_blank">
-            <svg class="w-6 fill-white hover:fill-gray-600" viewBox="0 0 48 48" fill="white"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z" />
-            </svg>
-          </a>
-        </div>
-
-        <!-- newsletter signup form -->
-        <div class="mt-6">
-          <h3 class="text-brand-500 mb-2 text-xl">Newsletter Signup</h3>
-          <div>
-            <input class="rounded-sm bg-black-800 py-1 px-2 mr-2 focus:outline-none focus:ring-2 focus:ring-black-700 placeholder:text-sm"
-              type="email" name="newsletter-email" id="newsletter-email" placeholder="Your Email">
-            <button class="inline-block bg-black-800 hover:bg-brand-800  py-1 px-3 rounded mt-2" type="submit">Signup</button>
-          </div>
-        </div>
-        <!-- end newsletter signup -->
-      </div> 
-      <!-- end of connect with us -->
-
-    </footer>
-    <!-- copyright section -->
-    <div class="w-full px-6 bg-[#222222] text-black-100 md:text-center py-6">
-      <p class="mb-2">&copy Copyright <span>Bishwokarma Trading and Promotors Pvt. ltd.</span> ,
-        All Rights Reserved.</p>
-      <span>
-        Designed :
-        <a href="https://deepin.com.np?src=bkpnepal" target="_blank">
-          deepin.com.np
-          <svg class="w-4 h-4 inline-block stroke-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+    <!-- connect with us -->
+    <div class="">
+      <h3 class="text-brand-500 text-xl">Follow us</h3>
+      <div class="flex space-x-4 mt-4 items-center">
+        <!-- faccebook icon -->
+        <a href="#" target="_blank">
+          <svg class="w-6 fill-white hover:fill-gray-600" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z" />
           </svg>
         </a>
-      </span>
-    </div>
-    <!-- end of copyright -->
-  </section>
-  <!-- footer section end -->
+        <!--twitter icon -->
+        <a href="#" target="_blank">
+          <svg class="w-6 fill-white hover:fill-gray-600" viewBox="0 0 48 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.1003 43.5C33.2091 43.5 43.1166 28.4935 43.1166 15.4838C43.1166 15.0619 43.1072 14.6307 43.0884 14.2088C45.0158 12.815 46.679 11.0886 48 9.11066C46.205 9.90926 44.2993 10.4308 42.3478 10.6575C44.4026 9.42588 45.9411 7.491 46.6781 5.21159C44.7451 6.35718 42.6312 7.16528 40.4269 7.60128C38.9417 6.02318 36.978 4.97829 34.8394 4.62816C32.7008 4.27803 30.5064 4.64216 28.5955 5.66425C26.6846 6.68635 25.1636 8.30947 24.2677 10.2827C23.3718 12.2559 23.1509 14.4693 23.6391 16.5807C19.725 16.3842 15.8959 15.3675 12.4 13.5963C8.90405 11.825 5.81939 9.33893 3.34594 6.29909C2.0888 8.46655 1.70411 11.0314 2.27006 13.4722C2.83601 15.9131 4.31013 18.047 6.39281 19.44C4.82926 19.3904 3.29995 18.9694 1.93125 18.2119V18.3338C1.92985 20.6084 2.7162 22.8132 4.15662 24.5736C5.59704 26.334 7.60265 27.5412 9.8325 27.99C8.38411 28.3863 6.86396 28.4441 5.38969 28.1588C6.01891 30.1149 7.24315 31.8258 8.89154 33.0527C10.5399 34.2796 12.5302 34.9613 14.5847 35.0025C11.0968 37.7423 6.78835 39.2283 2.35313 39.2213C1.56657 39.2201 0.780798 39.1719 0 39.0769C4.50571 41.9676 9.74706 43.5028 15.1003 43.5Z" />
+          </svg>
+        </a>
+        <!-- linked icon -->
+        <a href="#" target="_blank">
+          <svg class="w-6 fill-white hover:fill-gray-600" viewBox="0 0 48 48" fill="white"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z" />
+          </svg>
+        </a>
+      </div>
 
-  <script>
-    const menu = document.querySelector('.menu')
-    const mobileSideNav = document.querySelector('.mobile-side-nav')
-    const closeNav = document.querySelector('.close-side-nav')
+      <!-- newsletter signup form -->
+      <div class="mt-6">
+        <h3 class="text-brand-500 mb-2 text-xl">Newsletter Signup</h3>
+        <div>
+          <input class="rounded-sm bg-black-800 py-1 px-2 mr-2 focus:outline-none focus:ring-2 focus:ring-black-700 placeholder:text-sm"
+            type="email" name="newsletter-email" id="newsletter-email" placeholder="Your Email">
+          <button class="inline-block bg-black-800 hover:bg-brand-800  py-1 px-3 rounded mt-2" type="submit">Signup</button>
+        </div>
+      </div>
+      <!-- end newsletter signup -->
+    </div> 
+    <!-- end of connect with us -->
 
-    menu.addEventListener('click', () => mobileSideNav.classList.toggle('-translate-x-full'))
-    closeNav.addEventListener('click', () => mobileSideNav.classList.toggle('-translate-x-full'))
-  </script>
+  </footer>
+  <!-- copyright section -->
+  <div class="w-full px-6 bg-black-dark text-black-100 md:text-center py-6">
+    <p class="mb-2">&copy Copyright <span>Bishwokarma Trading and Promotors Pvt. ltd.</span> ,
+      All Rights Reserved.</p>
+    <span>
+      Designed :
+      <a href="https://deepin.com.np?src=bkpnepal" target="_blank">
+        deepin.com.np
+        <svg class="w-4 h-4 inline-block stroke-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+        </svg>
+      </a>
+    </span>
+  </div>
+  <!-- end of copyright -->
+</section>
+<!-- footer section end -->
+
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset : 120,
+  });
+</script>
 
 </body>
 
