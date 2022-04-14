@@ -13,6 +13,8 @@ navLinks.forEach(element => {
 });
 //end of current page link highliting
 
+import { multiStepFormHandling } from './registration.js'
+multiStepFormHandling()
 
 
 //Side nav toggle funcationality

@@ -31,8 +31,7 @@ module.exports = {
         },
       }, 
       fontFamily: {
-        'mukta' : ['Mukta', 'sans-serif'],
-        'fredoka': ['Fredoka', 'sans-serif'],
+        'natosans': ['Noto Sans', 'sans-serif'],
       },
     }
   },

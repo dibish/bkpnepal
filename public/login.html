@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=natosans:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -22,19 +22,13 @@
         <img src="images/bkp-nepal-logo.svg" alt="" srcset="">
       </a>
       <nav class="hidden lg:block">
-        <ul class="flex items-center text-sm uppercase space-x-0 text-gray-800">
-          <li><a class="nav-links"
-              href="/">Home</a></li>
-          <li><a class="nav-links"
-              href="action-plan.html">Action Plan</a></li>
-          <li><a class="nav-links"
-              href="membership-type.html">Membership Type</a></li>
-          <li><a class="nav-links"
-              href="upcoming-projects.html">Upcoming Projects</a></li>
-          <li><a class="nav-links"
-              href="about.html">About us</a></li>
-          <li><a class="nav-links"
-              href="contact.html">Contact us</a></li>
+        <ul class="flex items-center text-sm space-x-0 text-gray-800">
+          <li><a class="nav-links" href="/">Home</a></li>
+          <li><a class="nav-links" href="action-plan.html">Action Plan</a></li>
+          <li><a class="nav-links" href="membership-type.html">Register</a></li>
+          <li><a class="nav-links" href="upcoming-projects.html">Upcoming Projects</a></li>
+          <li><a class="nav-links" href="about.html">About us</a></li>
+          <li><a class="nav-links" href="contact.html">Contact us</a></li>
         </ul>
       </nav>
       <button class="menu hover:bg-black-50 rounded-full p-2 lg:hidden">
@@ -134,7 +128,7 @@
               d="M7.21454 8.49989C6.56991 8.20454 5.85992 8.09097 5.10743 8.09097C3.25031 8.09097 1.46106 9.01417 1.01285 10.8124C0.953921 11.0502 1.1032 11.2856 1.34749 11.2856H5.35743"
               stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
           </svg>
-          <span>Membership Type</span>
+          <span>Register</span>
         </a>
         <a class="hover:bg-black-50 text-black-700 hover:text-black-800 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
           href="upcoming-projects.html">
@@ -191,36 +185,40 @@
 
 
   <section class="pt-32 pb-16  bg-gray-100">
-      <main class="max-w-5xl md:px-6 mx-auto grid place-content-center">
-        <div class="bg-white p-4 md:p-6 shadow rounded-md">
-            <h3 class="font-semibold text-black-700 text-xl mb-4 flex items-center gap-2">
-                <svg class="w-6 h-6 stroke-black-700" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
-               <span>Login</span> 
-            </h3>
-            <form class="md:min-w-[350px] space-y-2 flex flex-col">
-                <label class="mb-2 block" for="name">
-                    <span>Username</span>
-                    <input class="input" type="text" name="name" id="name">
-                </label>
-                <label for="password">
-                    <span>Password</span>
-                    <input class="input" type="password" name="password" id="password">
-                </label>
-                <label for="remember">
-                    <input class="accent-black mt-2" type="checkbox" name="remember" id="remember">
-                    <span>Remember me</span>
-                </label>
-                
-                <button class="btn" type="submit">Login</button>
-                <a class="block underline mt-8 text-center" href="#forgot">Forgot Password ?</a>
-            </form>
-        </div>
-      </main>
+    <main class="max-w-5xl md:px-6 mx-auto grid place-content-center">
+      <div class="bg-white p-4 md:p-6 shadow rounded-md">
+        <h3 class="font-semibold text-black-700 text-xl mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 stroke-black-700" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+          </svg>
+          <span>Login</span>
+        </h3>
+        <form class="md:min-w-[350px] space-y-2 flex flex-col">
+          <label class="mb-2 block" for="name">
+            <span>Username</span>
+            <input class="input" type="text" name="name" id="name">
+          </label>
+          <label for="password">
+            <span>Password</span>
+            <input class="input" type="password" name="password" id="password">
+          </label>
+          <label for="remember">
+            <input class="accent-black mt-2" type="checkbox" name="remember" id="remember">
+            <span>Remember me</span>
+          </label>
+
+          <button class="btn" type="submit">Login</button>
+          <a class="block underline mt-8 text-center" href="#forgot">Forgot Password ?</a>
+        </form>
+      </div>
+    </main>
   </section>
 
   <!-- footer section start -->
   <section class="pt-4 h-auto bg-black">
-    <footer class="max-w-5xl mx-auto  px-6 py-8 text-black-100 md:flex flex-wrap gap-4 flex-row justify-between items-start">
+    <footer
+      class="max-w-5xl mx-auto  px-6 py-8 text-black-100 md:flex flex-wrap gap-4 flex-row justify-between items-start">
       <div>
         <svg class="w-[140px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 39.6">
           <defs>
@@ -277,7 +275,8 @@
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
-              <a class="hover:text-brand-200 underline" href="mailto: administration@bkpnepal.com">administration@bkpnepal.com</a>
+              <a class="hover:text-brand-200 underline"
+                href="mailto: administration@bkpnepal.com">administration@bkpnepal.com</a>
             </p>
             <p class="flex space-x-4">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -300,17 +299,22 @@
         <ul class="space-y-2 pt-4 text-black-100 text-lg">
           <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="/">Home</a>
           </li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="action-plan.html">Action
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="action-plan.html">Action
               Plan</a></li>
           <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
-              href="membership-type.html">Membership Type</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="upcoming-projects.html">Upcoming
+              href="membership-type.html">Register</a></li>
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="upcoming-projects.html">Upcoming
               Projects</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="about.html">About
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="about.html">About
               us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="contact.html">Contact
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="contact.html">Contact
               us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="login.html">Login</a></li>
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="login.html">Login</a></li>
         </ul>
       </div>
       <!-- end of footer sitemap -->
@@ -348,13 +352,15 @@
         <div class="mt-6">
           <h3 class="text-brand-500 mb-2 text-xl">Newsletter Signup</h3>
           <div>
-            <input class="rounded-sm bg-black-800 py-1 px-2 mr-2 focus:outline-none focus:ring-2 focus:ring-black-700 placeholder:text-sm"
+            <input
+              class="rounded-sm bg-black-800 py-1 px-2 mr-2 focus:outline-none focus:ring-2 focus:ring-black-700 placeholder:text-sm"
               type="email" name="newsletter-email" id="newsletter-email" placeholder="Your Email">
-            <button class="inline-block bg-black-800 hover:bg-brand-800  py-1 px-3 rounded mt-2" type="submit">Signup</button>
+            <button class="inline-block bg-black-800 hover:bg-brand-800  py-1 px-3 rounded mt-2"
+              type="submit">Signup</button>
           </div>
         </div>
         <!-- end newsletter signup -->
-      </div> 
+      </div>
       <!-- end of connect with us -->
 
     </footer>
@@ -378,11 +384,11 @@
   </section>
   <!-- footer section end -->
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset : 120,
+      offset: 120,
     });
   </script>
 

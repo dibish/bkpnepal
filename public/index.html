@@ -8,33 +8,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=natosans:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>BKP Nepal | Life Changing Platform </title>
 </head>
 
-<body class="bg-[#fff] font-fredoka antialiased text-black-800">
+<body class="bg-[#fff] font-natosans antialiased text-black-800">
   <div class="fixed z-10 w-full bg-white px-6 shadow-lg">
     <header class="h-16 max-w-5xl mx-auto flex items-center justify-between flex-wrap">
       <a class="w-[140px]" href="/">
         <img src="images/bkp-nepal-logo.svg" alt="" srcset="">
       </a>
       <nav class="hidden lg:block">
-        <ul class="flex items-center text-sm uppercase space-x-0 text-gray-800">
-          <li><a class="nav-links"
-              href="/">Home</a></li>
-          <li><a class="nav-links"
-              href="action-plan.html">Action Plan</a></li>
-          <li><a class="nav-links"
-              href="membership-type.html">Membership Type</a></li>
-          <li><a class="nav-links"
-              href="upcoming-projects.html">Upcoming Projects</a></li>
-          <li><a class="nav-links"
-              href="about.html">About us</a></li>
-          <li><a class="nav-links"
-              href="contact.html">Contact us</a></li>
+        <ul class="flex items-center text-sm space-x-0 text-gray-800">
+          <li><a class="nav-links" href="/">Home</a></li>
+          <li><a class="nav-links" href="action-plan.html">Action Plan</a></li>
+          <li><a class="nav-links" href="upcoming-projects.html">Upcoming Projects</a></li>
+          <li><a class="nav-links" href="about.html">About us</a></li>
+          <li><a class="nav-links" href="contact.html">Contact us</a></li>
+          <li><a class="nav-links" href="register.html">Register</a></li>
         </ul>
       </nav>
       <button class="menu hover:bg-black-50 rounded-full p-2 lg:hidden">
@@ -134,7 +128,7 @@
               d="M7.21454 8.49989C6.56991 8.20454 5.85992 8.09097 5.10743 8.09097C3.25031 8.09097 1.46106 9.01417 1.01285 10.8124C0.953921 11.0502 1.1032 11.2856 1.34749 11.2856H5.35743"
               stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
           </svg>
-          <span>Membership Type</span>
+          <span>Register</span>
         </a>
         <a class="hover:bg-black-50 text-black-700 hover:text-black-800 rounded-md transition-all text-lg font-medium flex items-center space-x-4 p-2"
           href="upcoming-projects.html">
@@ -189,17 +183,17 @@
   </div>
 
   <!-- hero section -->
-  <section
-    class="w-full bg-[url('../images/hero1.jpg')] bg-fixed bg-no-repeat bg-cover bg-bottom">
-    <div
-      class="w-full min-h-[100vh] bg-black bg-opacity-75 flex flex-col justify-center items-center ">
-      <h1 class="mt-8 py-2 text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-50 to-brand-700 text-center text-4xl md:text-6xl font-mukta font-black md:max-w-xl" style="line-height: 1.2;">जीवन बदल्ने साझा
-        मंचमा<br>हजुरलाई स्वागत छ।</h1>
+  <section class="w-full bg-[url('../images/hero1.jpg')] bg-fixed bg-no-repeat bg-cover bg-bottom">
+    <div class="w-full min-h-[100vh] bg-black bg-opacity-75 flex flex-col justify-center items-center ">
+      <h1
+        class="mt-8 py-2 text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-50 to-brand-700 text-center text-4xl md:text-6xl font-natosans font-black md:max-w-xl"
+        style="line-height: 1.2;">जीवन बदल्ने साझा
+        मंचमा हजुरलाई स्वागत छ।</h1>
       <div>
-        <button
+        <a href="register.html"
           class="text-white text-md md:text-2xl bg-brand  hover:bg-brand-800 mt-4 md:mt-8 px-6 py-2 rounded-md focus:outline  focus:outline-2 focus:outline-brand-200 focus:outline-offset-2">Become
           a member
-      </button>
+        </a>
       </div>
     </div>
   </section>
@@ -207,7 +201,7 @@
 
   <!-- start of why choose bkp nepal -->
   <section class="bg-black-50">
-    <div class="max-w-5xl mx-auto px-8 py-16 md:py-24"  >
+    <div class="max-w-5xl mx-auto px-8 py-16 md:py-24">
       <h3 class="text-4xl font-semibold py-2">Why Choose BKPNepal?</h3>
       <div class="grid md:grid-cols-4 gap-4 mt-4" data-aos="slide-up">
         <div class="bg-white shadow p-4 py-8 border-l-8 border-l-brand-700 rounded-md">
@@ -233,37 +227,45 @@
 
   <!-- about us section -->
   <section class="bg-white">
-    <div class="section font-mukta" data-aos="slide-right">
-      <h3  class="text-4xl font-bold">हाम्रो बारेमा</h3>
-      <p class="my-6 text-xl md:max-w-3xl leading-relaxed md:font-normal text-black-600">विविध बस्तु तथा क्षेत्र हरुमा राष्ट्रिय तथा अन्तर्राष्ट्रिय स्तरमा ब्यापार, ब्यापार प्रबर्द्धन, र ब्यवस्थापन गर्ने प्रमुख उदेश्यका साथ मिति २०७३कार्तिक २६ गते कम्पनी रजिस्ट्रार कार्यलयमा दर्ता भई संचालनमा आएको कम्पनी हो बिश्वकर्मा टेडिङ्ग एण्ड प्रमोटर्स प्रा.लि. । यस कम्पनीको एक मात्र संचालक इ.सन्जुक्ता सुनार हुनुहुन्छ । कम्पनीको मुख्य कार्यलय हाल बुटवल -११ रुपन्देही मा रहेको छ।</p>
+    <div class="section font-natosans" data-aos="slide-right">
+      <h3 class="text-4xl font-bold">हाम्रो बारेमा</h3>
+      <p class="my-6 text-xl md:max-w-3xl leading-relaxed md:font-normal text-black-600">विविध बस्तु तथा क्षेत्र हरुमा
+        राष्ट्रिय तथा अन्तर्राष्ट्रिय स्तरमा ब्यापार, ब्यापार प्रबर्द्धन, र ब्यवस्थापन गर्ने प्रमुख उदेश्यका साथ मिति
+        २०७३कार्तिक २६ गते कम्पनी रजिस्ट्रार कार्यलयमा दर्ता भई संचालनमा आएको कम्पनी हो बिश्वकर्मा टेडिङ्ग एण्ड
+        प्रमोटर्स प्रा.लि. । यस कम्पनीको एक मात्र संचालक इ.सन्जुक्ता सुनार हुनुहुन्छ । कम्पनीको मुख्य कार्यलय हाल बुटवल
+        -११ रुपन्देही मा रहेको छ।</p>
       <a href="about.html" class="bg-brand text-sm text-white hover:bg-brand-800 rounded-full px-6 py-1">पुरा पढ्नुस</a>
     </div>
 
   </section>
-<!-- end of about us section -->
+  <!-- end of about us section -->
 
-<!-- hamro mantra section -->
-  <section class="bg-white border-t border-t-black-50" >
+  <!-- hamro mantra section -->
+  <section class="bg-white border-t border-t-black-50">
     <div class="section" data-aos="fade-in">
-      <h3 class="text-black-800 font-mukta text-4xl font-bold">हाम्रो मन्त्र</h3>
+      <h3 class="text-black-800 font-natosans text-4xl font-bold">हाम्रो मन्त्र</h3>
       <div class="grid md:grid-cols-3 gap-8 mt-8 text-xl font-semibold">
         <div class="bg-black-50 p-4 rounded-lg shadow-sm">
-          <img class="p-8" src="https://cdn-icons.flaticon.com/png/512/756/premium/756740.png?token=exp=1648019459~hmac=53ffa2a8f85db2f951c43d78e9fbb7e1" alt="teamwork">
+          <img class="p-8"
+            src="https://cdn-icons.flaticon.com/png/512/756/premium/756740.png?token=exp=1648019459~hmac=53ffa2a8f85db2f951c43d78e9fbb7e1"
+            alt="teamwork">
           <p class="text-2xl text-brand-800 text-center py-2">Team Work</p>
         </div>
         <div class="bg-black-50 p-4 rounded-lg shadow-sm">
           <img class="p-8" src="https://cdn-icons-png.flaticon.com/512/780/780528.png" alt="technology icon">
           <p class="text-2xl text-brand-800 text-center py-2">Technology</p>
         </div>
-      
+
         <div class="bg-black-50 p-4 rounded-lg shadow-sm">
-          <img class="p-8" src="https://cdn-icons.flaticon.com/png/512/3707/premium/3707965.png?token=exp=1648019670~hmac=7e3fdeb72207b151cd082a840ba6d1ed" alt="compounding">
+          <img class="p-8"
+            src="https://cdn-icons.flaticon.com/png/512/3707/premium/3707965.png?token=exp=1648019670~hmac=7e3fdeb72207b151cd082a840ba6d1ed"
+            alt="compounding">
           <p class="text-2xl text-brand-800 text-center py-2">Compounding</p>
         </div>
       </div>
     </div>
   </section>
-<!-- end of hamro mantra -->
+  <!-- end of hamro mantra -->
   <!-- mission vision goal section -->
   <section class="bg-black-50">
     <div
@@ -274,7 +276,7 @@
         </div>
         <div class="px-4 py-4 space-y-2">
           <h3 class="underline decoration-brand decoration-4 text-black text-2xl font-bold">Vision</h3>
-          <p class="font-mukta text-black-800 text-lg font-semibold">सानो सानो पुंजीलाई एकीकृत गरि बृहत राष्ट्रिय
+          <p class="font-natosans text-black-800 text-lg font-semibold">सानो सानो पुंजीलाई एकीकृत गरि बृहत राष्ट्रिय
             पुंजिमा रुपान्तरण गरि उत्पादन ब्यापार प्रबर्द्धन देशलाई आर्थिक समृद्धि मा लैजाने।</p>
         </div>
       </div>
@@ -284,11 +286,12 @@
         </div>
         <div class="px-4 py-4 space-y-2">
           <h3 class="underline decoration-brand decoration-4 text-black text-2xl font-bold">Mission</h3>
-          <p class="font-mukta text-black-800 text-lg font-semibold">राष्ट्रिय तथा अन्तर्राष्ट्रिय जगतमा एक प्रतिष्ठित
+          <p class="font-natosans text-black-800 text-lg font-semibold">राष्ट्रिय तथा अन्तर्राष्ट्रिय जगतमा एक
+            प्रतिष्ठित
             कम्पनी भइ कारोबार गर्ने।</p>
         </div>
       </div>
-    
+
       <div class="card bg-white rounded-xl hover:shadow-lg">
         <div class="flex items-center justify-center">
           <img class="w-7/12 pb-2" src="https://cdn-icons-png.flaticon.com/512/1534/1534968.png" alt="" />
@@ -296,7 +299,7 @@
         </div>
         <div class=" px-4 py-4 space-y-2">
           <h3 class="underline decoration-brand decoration-4 text-black text-2xl font-bold">Goal</h3>
-          <p class="font-mukta text-black-800 text-lg font-semibold">सम्पुर्ण नेपाली जन हरु को साझा कम्पनी बनाई
+          <p class="font-natosans text-black-800 text-lg font-semibold">सम्पुर्ण नेपाली जन हरु को साझा कम्पनी बनाई
             राष्ट्रिय तथा अन्तर्राष्ट्रिय जगत मा ब्यापार ब्यवसाय गर्ने</p>
         </div>
       </div>
@@ -306,7 +309,8 @@
 
   <!-- footer section start -->
   <section class="pt-4 h-auto bg-black">
-    <footer class="max-w-5xl mx-auto  px-6 py-8 text-black-100 md:flex flex-wrap gap-4 flex-row justify-between items-start">
+    <footer
+      class="max-w-5xl mx-auto  px-6 py-8 text-black-100 md:flex flex-wrap gap-4 flex-row justify-between items-start">
       <div>
         <svg class="w-[140px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 39.6">
           <defs>
@@ -363,7 +367,8 @@
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
-              <a class="hover:text-brand-200 underline" href="mailto: administration@bkpnepal.com">administration@bkpnepal.com</a>
+              <a class="hover:text-brand-200 underline"
+                href="mailto: administration@bkpnepal.com">administration@bkpnepal.com</a>
             </p>
             <p class="flex space-x-4">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -386,17 +391,22 @@
         <ul class="space-y-2 pt-4 text-black-100 text-lg">
           <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="/">Home</a>
           </li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="action-plan.html">Action
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="action-plan.html">Action
               Plan</a></li>
           <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
-              href="membership-type.html">Membership Type</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="upcoming-projects.html">Upcoming
+              href="membership-type.html">Register</a></li>
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="upcoming-projects.html">Upcoming
               Projects</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="about.html">About
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="about.html">About
               us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="contact.html">Contact
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="contact.html">Contact
               us</a></li>
-          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline " href="login.html">Login</a></li>
+          <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+              href="login.html">Login</a></li>
         </ul>
       </div>
       <!-- end of footer sitemap -->
@@ -434,13 +444,15 @@
         <div class="mt-6">
           <h3 class="text-brand-500 mb-2 text-xl">Newsletter Signup</h3>
           <div>
-            <input class="rounded-sm bg-black-800 py-1 px-2 mr-2 focus:outline-none focus:ring-2 focus:ring-black-700 placeholder:text-sm"
+            <input
+              class="rounded-sm bg-black-800 py-1 px-2 mr-2 focus:outline-none focus:ring-2 focus:ring-black-700 placeholder:text-sm"
               type="email" name="newsletter-email" id="newsletter-email" placeholder="Your Email">
-            <button class="inline-block bg-black-800 hover:bg-brand-800  py-1 px-3 rounded mt-2" type="submit">Signup</button>
+            <button class="inline-block bg-black-800 hover:bg-brand-800  py-1 px-3 rounded mt-2"
+              type="submit">Signup</button>
           </div>
         </div>
         <!-- end newsletter signup -->
-      </div> 
+      </div>
       <!-- end of connect with us -->
 
     </footer>
@@ -464,11 +476,11 @@
   </section>
   <!-- footer section end -->
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset : 120,
+      offset: 120,
     });
   </script>
 
