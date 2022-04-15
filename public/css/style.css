@@ -1109,44 +1109,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\.\.\/images\/punji-bridhi\.png\'\)\]{
-  background-image: url('../images/punji-bridhi.png');
-}
-
 .bg-\[url\(\'\.\.\/images\/hero\.jpg\'\)\]{
   background-image: url('../images/hero.jpg');
 }
 
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1540340061722-9293d5163008\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=871\&q\=80\'\)\]{
-  background-image: url('https://images.unsplash.com/photo-1540340061722-9293d5163008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1576181456177-2b99ac0aa1ef\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=435\&q\=80\'\)\]{
-  background-image: url('https://images.unsplash.com/photo-1576181456177-2b99ac0aa1ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80');
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1550666253-d6649814e4bf\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=464\&q\=80\'\)\]{
-  background-image: url('https://images.unsplash.com/photo-1550666253-d6649814e4bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80');
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1594709286069-f1d05fd0dd44\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=870\&q\=80\'\)\]{
-  background-image: url('https://images.unsplash.com/photo-1594709286069-f1d05fd0dd44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1509966756634-9c23dd6e6815\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=476\&q\=80\'\)\]{
-  background-image: url('https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=476&q=80');
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1629096193181-89aa83f523cb\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=528\&q\=80\'\)\]{
-  background-image: url('https://images.unsplash.com/photo-1629096193181-89aa83f523cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=528&q=80');
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1617906681842-94a418bb88f8\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=580\&q\=80\'\)\]{
-  background-image: url('https://images.unsplash.com/photo-1617906681842-94a418bb88f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80');
 }
 
 .bg-\[url\(\'\.\.\/images\/bkp-store\.jpg\'\)\]{
@@ -1161,24 +1129,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/bkp-infosys.jpg');
 }
 
-.bg-\[url\(\'\.\.\/images\/bkp-jewellery\'\)\]{
-  background-image: url('../images/bkp-jewellery');
-}
-
 .bg-\[url\(\'\.\.\/images\/bkp-jewellery\.jpg\'\)\]{
   background-image: url('../images/bkp-jewellery.jpg');
 }
 
 .bg-\[url\(\'\.\.\/images\/bkp-developers\.jpg\'\)\]{
   background-image: url('../images/bkp-developers.jpg');
-}
-
-.bg-\[url\(\'\.\.images\/bkp-entertainment\.jpg\'\)\]{
-  background-image: url('..images/bkp-entertainment.jpg');
-}
-
-.bg-\[url\(\'\.\.images\/bkp-intertainment\.jpg\'\)\]{
-  background-image: url('..images/bkp-intertainment.jpg');
 }
 
 .bg-\[url\(\'\.\.\/images\/bkp-entertainment\.jpg\'\)\]{
@@ -1260,14 +1216,14 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
-.object-right-top{
-  -o-object-position: right top;
-     object-position: right top;
-}
-
 .object-center{
   -o-object-position: center;
      object-position: center;
+}
+
+.object-right-top{
+  -o-object-position: right top;
+     object-position: right top;
 }
 
 .p-2{
@@ -1440,6 +1396,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-medium{
@@ -1890,6 +1851,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 1.5rem;
   }
 
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
   .md\:p-6{
     padding: 1.5rem;
   }
@@ -1921,6 +1886,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:font-normal{
