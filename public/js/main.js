@@ -7,8 +7,8 @@ navLinks.forEach(element => {
     const linkParts = element.href.split('/')
     const currentPage = linkParts[linkParts.length - 1]
     console.log(currentPage)
-    if(pageName === currentPage){
-        element.classList.add('underline', 'decoration-brand-600','decoration-4','underline-offset-8')
+    if (pageName === currentPage) {
+        element.classList.add('underline', 'decoration-brand-600', 'decoration-4', 'underline-offset-8')
     }
 });
 //end of current page link highliting
