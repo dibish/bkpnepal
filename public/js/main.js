@@ -3,12 +3,18 @@ const splitedPath = window.location.pathname.split('/')
 const pageName = splitedPath[splitedPath.length - 1]
 const navLinks = document.querySelectorAll('.nav-links')
 
+
 navLinks.forEach(element => {
+   
     const linkParts = element.href.split('/')
     const currentPage = linkParts[linkParts.length - 1]
-    console.log(currentPage)
+    
     if (pageName === currentPage) {
-        element.classList.add('underline', 'decoration-brand-600', 'decoration-2', 'underline-offset-1')
+        element.style.color = "red";
+        element.style.fontWeight = "bold";
+        element.addEventListener('mouseover',()=>{
+            element.style.backgroundColor = "transparent";
+        })
     }
 });
 //end of current page link highliting
