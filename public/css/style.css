@@ -485,6 +485,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  font-weight: 600;
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -694,6 +695,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-12{
   margin-top: 3rem;
 }
@@ -704,14 +709,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-mr-10{
   margin-right: -2.5rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .block{
@@ -889,6 +886,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-content: center;
 }
 
+.content-center{
+  align-content: center;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -1009,10 +1010,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 4px;
 }
 
-.border-l-8{
-  border-left-width: 8px;
-}
-
 .border-t{
   border-top-width: 1px;
 }
@@ -1036,11 +1033,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(116 116 116 / var(--tw-border-opacity));
 }
 
-.border-l-brand-700{
-  --tw-border-opacity: 1;
-  border-left-color: rgb(241 73 80 / var(--tw-border-opacity));
-}
-
 .border-t-black-50{
   --tw-border-opacity: 1;
   border-top-color: rgb(242 242 242 / var(--tw-border-opacity));
@@ -1054,6 +1046,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-brand{
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 28 36 / var(--tw-bg-opacity));
 }
 
 .bg-black-50{
@@ -1089,11 +1086,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-red-50{
   --tw-bg-opacity: 1;
   background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-brand{
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 28 36 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200{
@@ -1266,6 +1258,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.25rem;
 }
 
+.p-12{
+  padding: 3rem;
+}
+
 .p-3{
   padding: 0.75rem;
 }
@@ -1388,10 +1384,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.5rem;
 }
 
-.pb-8{
-  padding-bottom: 2rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1415,11 +1407,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1433,6 +1420,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-medium{
@@ -1473,6 +1470,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-black-700{
   --tw-text-opacity: 1;
   color: rgb(69 69 69 / var(--tw-text-opacity));
@@ -1502,19 +1504,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: transparent;
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-black-600{
   --tw-text-opacity: 1;
   color: rgb(93 93 93 / var(--tw-text-opacity));
-}
-
-.text-brand-800{
-  --tw-text-opacity: 1;
-  color: rgb(239 51 58 / var(--tw-text-opacity));
 }
 
 .text-black{
@@ -1546,8 +1538,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-decoration-thickness: 4px;
 }
 
-.underline-offset-8{
-  text-underline-offset: 8px;
+.decoration-2{
+  text-decoration-thickness: 2px;
+}
+
+.underline-offset-1{
+  text-underline-offset: 1px;
 }
 
 .antialiased{
@@ -1673,10 +1669,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-brand-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(239 51 58 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-transparent:hover{
-  background-color: transparent;
 }
 
 .hover\:bg-gray-700:hover{

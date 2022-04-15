@@ -15,7 +15,7 @@
     <title>BKP Nepal | Life Changing Platform </title>
 </head>
 
-<body class="bg-[#fff] font-fredoka antialiased text-gray-700">
+<body class="bg-[#fff] font-natosans antialiased text-gray-700">
     <div class="fixed z-10 w-full bg-white px-6 shadow-md">
         <header class="h-16 max-w-5xl mx-auto flex items-center justify-between flex-wrap">
             <a class="w-[140px]" href="/">
@@ -28,7 +28,7 @@
                     <li><a class="nav-links" href="upcoming-projects.html">Upcoming Projects</a></li>
                     <li><a class="nav-links" href="about.html">About us</a></li>
                     <li><a class="nav-links" href="contact.html">Contact us</a></li>
-                    <li class="hover:bg-transparent"><a class="nav-links" href="register.html">Register</a></li>
+                    <li><a class="btn bg-brand text-white" href="register.html">Register</a></li>
                 </ul>
             </nav>
             <button class="menu hover:bg-black-50 rounded-full p-2 lg:hidden">
@@ -268,7 +268,7 @@
                         </label>
 
                         <div class="flex justify-end w-full py-4 space-x-4">
-                        
+
                             <button class="next-btn btn flex items-center gap-1" type="submit">
                                 <span>Next</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
@@ -585,23 +585,26 @@
 
 
                 <!-- step 5 form -->
-              <div class="hidden step step-5">
+                <div class="hidden step step-5">
                     <div class="flex justify-between py-4">
                         <span class="font-semibold text-2xl">Upload documents</span>
                         <span class="py-1 pl-3 pr-10 -mr-10 bg-gray-200 rounded-full shadow">Step 5 of 7</span>
                     </div>
-                    <p class="bg-amber-100 mb-4 px-2 w-fit rounded text-sm font-semibold border border-yellow-200">Note : all
+                    <p class="bg-amber-100 mb-4 px-2 w-fit rounded text-sm font-semibold border border-yellow-200">Note
+                        : all
                         document must be in .jpg , .png or .jpeg format</p>
                     <form class="space-y-2 flex flex-col">
                         <label class="mb-2 block" for="MemberImage"><span>Upload your photo</span>
                             <input type="file" name="MemberImage" id="MemberImage" class="input MemberPhotoString">
                         </label>
                         <label class="mb-2 block" for="CitizenshipFrontImage"><span>Citizenship Front:</span>
-                            <input type="file" class="input CitizenshipFrontImageString" id="CitizenshipFrontImage" name="CitizenshipFrontImage">
+                            <input type="file" class="input CitizenshipFrontImageString" id="CitizenshipFrontImage"
+                                name="CitizenshipFrontImage">
                         </label>
                         <label class="mb-2 block" for="CitizenshipBackImage">
                             <span>Citizenship Front:</span>
-                            <input type="file" name="CitizenshipBackImage" class="input CitizenshipBackImageString" id="CitizenshipBackImage">
+                            <input type="file" name="CitizenshipBackImage" class="input CitizenshipBackImageString"
+                                id="CitizenshipBackImage">
                         </label>
                         <div class="flex justify-end w-full py-4 space-x-4">
                             <button
@@ -626,7 +629,7 @@
                             </button>
                         </div>
                     </form>
-                </div>  
+                </div>
                 <!-- end of step 5 -->
 
 
@@ -636,17 +639,21 @@
                         <span class="font-semibold text-2xl">Payment</span>
                         <span class="py-1 pl-3 pr-10 -mr-10 bg-gray-200 rounded-full shadow">Step 6 of 7</span>
                     </div>
-                    
+
                     <form class="space-y-2 flex flex-col">
                         <label class="mb-2 block" for="Amount"><span>Amount</span>
-                            <input type="text" name="Amount" class="input" id="Amount" placeholder="Amount" onkeypress="AllowPositiveNumber(event)">
+                            <input type="text" name="Amount" class="input" id="Amount" placeholder="Amount"
+                                onkeypress="AllowPositiveNumber(event)">
                         </label>
-                        <label class="mb-2 block" for="VoucherImageFile"><span>Upload voucher Photo / Online payment proof Screenshot or Photo:</span>
-                            <input type="file" name="VoucherImageFile" class="input VoucherImageString" id="VoucherImageFile">
+                        <label class="mb-2 block" for="VoucherImageFile"><span>Upload voucher Photo / Online payment
+                                proof Screenshot or Photo:</span>
+                            <input type="file" name="VoucherImageFile" class="input VoucherImageString"
+                                id="VoucherImageFile">
                         </label>
                         <label class="mb-2 block" for="ReferalCode">
                             <span>Referal Code</span>
-                            <input type="text" name="ReferalCode" class="input" id="ReferalCode" placeholder="Referal Code">
+                            <input type="text" name="ReferalCode" class="input" id="ReferalCode"
+                                placeholder="Referal Code">
                         </label>
                         <div class="flex justify-end w-full py-4 space-x-4">
                             <button
@@ -682,23 +689,31 @@
                         <span class="py-1 pl-3 pr-10 -mr-10 bg-gray-200 rounded-full shadow">Step 7 of 7</span>
                     </div>
                     <form class="flex  flex-col space-y-2 p-6 group  ">
-                      <div class="flex flex-col items-center justify-center rounded-md bg-gray-100 py-20 ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-green-500" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                        </svg>
-                        <h3 class="font-semibold">Success</h3>
-                        <p class="text-center">You Have Successfully Submit the form</p>
-                      </div>
-                      <div class="flex w-full justify-center space-x-4 py-4">
-                        <button class="prev-btn flex items-center gap-1 rounded bg-gray-200 py-2 px-5 text-sm hover:bg-gray-300" type="submit">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
-                          </svg>
-                          <span>Back</span>
-                        </button>
-                      </div>
+                        <div class="flex flex-col items-center justify-center rounded-md bg-gray-100 py-20 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-green-500" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <h3 class="font-semibold">Success</h3>
+                            <p class="text-center">You Have Successfully Submit the form</p>
+                        </div>
+                        <div class="flex w-full justify-center space-x-4 py-4">
+                            <button
+                                class="prev-btn flex items-center gap-1 rounded bg-gray-200 py-2 px-5 text-sm hover:bg-gray-300"
+                                type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Back</span>
+                            </button>
+                        </div>
                     </form>
-                  </div>
+                </div>
                 <!-- end ofstep 7 form -->
 
             </div>
@@ -851,6 +866,9 @@
                         </p>
                     </address>
                 </div>
+                <div class="mt-8">
+                    <a class="btn bg-brand mt-4" href="register.html">Become a member</a>
+                  </div>
             </div>
 
             <!-- footer sitemap -->
@@ -864,8 +882,6 @@
                             href="action-plan.html">Action
                             Plan</a></li>
                     <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
-                            href="membership-type.html">Register</a></li>
-                    <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
                             href="upcoming-projects.html">Upcoming
                             Projects</a></li>
                     <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
@@ -876,6 +892,8 @@
                             us</a></li>
                     <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
                             href="login.html">Login</a></li>
+                    <li><a class="transition duration-100 ease-in hover:text-brand-300 py-2 hover:underline "
+                            href="register.html">Register</a></li>
                 </ul>
             </div>
             <!-- end of footer sitemap -->
@@ -947,7 +965,7 @@
     <!-- footer section end -->
 
     <script src="js/main.js" type="module"></script>
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
