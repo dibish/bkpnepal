@@ -6,7 +6,6 @@ export function multiStepFormHandling(){
     const stepIndicatorIcon = document.querySelectorAll('.step-indicator-icon');
     const stepIndicatorText = document.querySelectorAll('.step-indicator-text');
 
-    console.log(stepIndicatorIcon,stepIndicatorText)
 
     allNextBtn.forEach((value,index) => {
         allNextBtn[index].addEventListener('click',(e)=>{
@@ -19,10 +18,8 @@ export function multiStepFormHandling(){
             stepIndicatorIcon[index + 1].style.backgroundColor = '#22c55e'
 
             if(index > 4){
-                stepIndicatorIcon[6].innerHTML = '&#10003;';
-                
+                stepIndicatorIcon[6].innerHTML = '&#10003;'; 
             }
-            
 
         })
 
@@ -41,7 +38,6 @@ export function multiStepFormHandling(){
 
             if(index > 4){
                 stepIndicatorIcon[6].innerHTML = index + 2;
-                
             }
         })
     })
