@@ -649,6 +649,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -657,11 +662,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .ml-4{
@@ -1085,9 +1085,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
-.bg-brand-50{
+.bg-gray-50{
   --tw-bg-opacity: 1;
-  background-color: rgb(253 232 233 / var(--tw-bg-opacity));
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .bg-red-50{
@@ -1113,16 +1113,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-300{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-brand-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 142 146 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-80{
@@ -1352,11 +1342,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pt-32{
   padding-top: 8rem;
 }
@@ -1442,10 +1427,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
 }
 
 .font-medium{
@@ -1615,6 +1596,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-brand{
+  --tw-shadow-color: #ed1c24;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-brand\/50{
+  --tw-shadow-color: rgb(237 28 36 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-brand\/70{
+  --tw-shadow-color: rgb(237 28 36 / 0.7);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1759,6 +1755,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:shadow-gray-900\/50:hover{
+  --tw-shadow-color: rgb(17 24 39 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-gray-800\/50:hover{
+  --tw-shadow-color: rgb(31 41 55 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1846,11 +1852,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:col-span-1{
     grid-column: span 1 / span 1;
-  }
-
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .md\:mt-8{
@@ -1945,11 +1946,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
-  .lg\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:block{
     display: block;
   }
