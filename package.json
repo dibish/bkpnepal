@@ -4,7 +4,8 @@
   "description": "website for BKP NEPAl",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch"
+    "build": "npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch",
+    "minify": "npx tailwindcss -i ./src/style.css -o ./public/css/style.css -m"
   },
   "keywords": [],
   "author": "",
